@@ -1,0 +1,104 @@
+/* 单独作为一个文件存在的css初始化代码 */
+body,
+div,
+span,
+p,
+a,
+img,
+input,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+strong,
+del,
+em,
+ins,
+i,
+header,
+nav,
+footer {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0 none;
+  outline: none;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+.w {
+  width: 1400px;
+}
+body {
+  font: 12px/100% "微软雅黑";
+}
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.bl {
+  border-left: 0.01rem solid #fff;
+}
+.br {
+  border-right: 0.01rem solid #fff;
+}
+.bt {
+  border-top: 0.01rem solid #fff;
+}
+.bb {
+  border-bottom: 0.01rem solid #fff;
+}
+.innerbox {
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #000;
+  font-size: .7rem;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, "黑体", Arial, Tahoma;
+  height: 100%;
+}
+/*滚动条样式*/
+.innerbox::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 4px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 4px;
+}
+.innerbox::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+.innerbox::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}

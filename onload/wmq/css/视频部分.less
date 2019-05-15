@@ -1,0 +1,182 @@
+@import '视频鉴赏base.less';
+
+
+body {
+    //左侧视频主体样式
+    #main-video {
+        // width: 1400px;
+        height: 1080px;
+        // background: pink;
+        background: url('../images/bg_33ddb76.jpg') no-repeat -250px -100px;
+        background-size: 150%;
+        // display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        .w {
+            width: 1050px;
+            height: 1080px;
+            margin: 0 0 0 125px;
+            position: relative;
+            overflow: hidden;
+
+            //视频标题
+            .video-title {
+                width: 321px;
+                height: 49px;
+                // position: absolute;
+                margin-top: 110px;
+                margin-left: 50px;
+                background: url('../images/title_57745fe.png');
+            }
+
+            // 导航栏
+            nav {
+                width: 100%;
+                height: 24px;
+                padding-right: 130px;
+                box-sizing: border-box;
+                text-align: right;
+                margin-bottom: 15px;
+
+                a {
+                    position: relative;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 18px;
+                    margin-left: 30px;
+                    padding: 0 6px;
+                    text-align: center;
+                    color: #fff;
+                }
+
+                a.active {
+                    color: #e9e0b9;
+
+                }
+
+                .nav1::before {
+                    // color: #e9e0b9;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: -7px;
+                    left: 0;
+                    background-color: #aa9452;
+                }
+
+                .nav1::after {
+                    // color: #e9e0b9;
+                    content: "";
+                    position: absolute;
+                    background: url('../images/line_50d54df.png');
+                    width: 16px;
+                    height: 9px;
+                    position: absolute;
+                    right: -25px;
+                    top: 9px;
+                }
+            }
+
+            //视频列表
+            .tab {
+                // width: 1050px;
+                height: 700px;
+
+                // background: pink;
+                .com {
+                    height: 650px;
+                    overflow: hidden;
+                    // display: none;
+                    ul {
+                        width: 935px;
+                        margin: 12px auto;
+
+                        li {
+                            height: 190px;
+                            width: 300px;
+                            margin-right: 15px;
+                            margin-bottom: 5px;
+                            float: left;
+                            // background: yellow;
+                            position: relative;
+
+                            .mask {
+                                i {
+                                    background: url('../images/index_z_8de7eab.png') no-repeat -1198px -378px;
+                                    width: 150px;
+                                    height: 150px;
+                                    position: absolute;
+                                    left: 50%;
+                                    top: 0;
+                                    margin-left: -75px;
+                                }
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            p {
+                                width: 100%;
+                                text-align: center;
+                                font-size: 14px;
+                                color: #fff;
+                                line-height: 28px;
+                                position: relative;
+
+                                i {
+                                    width: 6px;
+                                    height: 1px;
+                                    background: #fff;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    margin: 0 3px;
+                                }
+                            }
+                        }
+
+                        li:nth-child(3n) {
+                            margin-right: 0;
+                        }
+                    }
+
+                }
+            }
+
+            //置顶按钮
+            .top-btn {
+                width: 53px;
+                height: 53px;
+                position: absolute;
+                left: 0;
+                bottom: 150px;
+                background: url('../images/index_z_8de7eab.png') no-repeat -1423px -378px;
+                cursor: pointer;
+            }
+
+            //下拉按钮
+            .xl-btn {
+                width: 71px;
+                height: 46px;
+                margin: 5px auto;
+                background: url('../images/index_z_8de7eab.png') no-repeat -1198px -528px;
+            }
+        }
+
+        //切换栏
+        .video-page {
+            width: 297px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -20px;
+            // background: red;
+            background: url('../images/index_z_8de7eab.png') no-repeat -297px 0px;
+            cursor: pointer;
+        }
+    }
+}

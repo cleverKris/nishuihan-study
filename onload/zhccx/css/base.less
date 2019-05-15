@@ -1,0 +1,95 @@
+/**
+*  初始化样式
+*  
+*/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+i,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    font-style: normal;
+}
+
+li {
+    /* 去掉li的小圆点 */
+    list-style: none;
+}
+
+a {
+    /* 去掉a的下划线 */
+    text-decoration: none;
+    /* 改变a的默认颜色 */
+    color: #666;
+}
+
+input {
+    /* 去掉输入的外边框 */
+    border: 0;
+    /* 去掉输入框的内边框 */
+    outline: 0;
+}
+
+img {
+    /* 解决图片和块级元素之间的间隙问题 */
+    vertical-align: middle;
+}
+
+/* 清除浮动的类名 给父容器加了在父容器里面多出一个伪元素 这个伪元素设置清除浮动 会让父元素有高度 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.current {
+    background-position: -1069px -456px;
+}

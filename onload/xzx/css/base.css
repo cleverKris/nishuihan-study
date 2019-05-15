@@ -1,0 +1,41 @@
+/* base.css样式初始化文件 放了一些常见样式初始化 和移动端样式初始化 和 公共类名 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 设置移动端点击高亮背景色  去掉就设置为透明颜色即可*/
+  -webkit-tap-highlight-color: transparent;
+}
+/* 给body设置字体默认样式 */
+a {
+  text-decoration: none;
+  color: #000;
+}
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0;
+  outline: none;
+}
+img {
+  /* 解决图片底部3px间隙问题 */
+  vertical-align: middle;
+  border: 0 none;
+  /* 在低版本浏览器可能会出现图片自带边框 */
+}
+i {
+  /* 去掉斜体 */
+  font-style: normal;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}

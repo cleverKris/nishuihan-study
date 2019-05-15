@@ -1,0 +1,637 @@
+nav,
+header,
+footer,
+body,
+div,
+span,
+p,
+a,
+img,
+input,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+del,
+ins,
+em,
+i {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+input {
+  outline: none;
+  border: 0 none;
+}
+ul {
+  list-style: none;
+}
+i,
+em {
+  font-style: normal;
+}
+b {
+  font-weight: normal;
+}
+.clearfix::after {
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.w {
+  width: 1920px;
+  margin: 0 auto;
+}
+video {
+  object-fit: contain;
+}
+body {
+  font: 12px/100% "微软雅黑";
+  background: url('../images/bigbg.webp') no-repeat 50% 1080px;
+  height: 1000px;
+}
+body #loading {
+  position: absolute;
+  left: 50%;
+  margin-left: -960px;
+  top: 0;
+  z-index: 999;
+  background: url('../images/startbajian.jpg') no-repeat;
+  width: 1920px;
+  height: 1000px;
+  overflow: hidden;
+}
+body #loading video {
+  pointer-events: none;
+}
+body #loading video.bgv {
+  pointer-events: none;
+}
+body #loading .circle {
+  position: absolute;
+  width: 640px;
+  height: 580px;
+  left: 50%;
+  top: 50%;
+  margin-left: -320px;
+  margin-top: -400px;
+  color: #385071;
+  font-size: 24px;
+}
+body #loading .circle .progress {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 200px;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+@keyframes loading {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: bottom;
+  }
+}
+body #loading-in {
+  display: none;
+}
+body .boss {
+  display: none;
+}
+body .boss #header {
+  position: relative;
+  height: 820px;
+}
+body .boss #header .video-box {
+  position: absolute;
+}
+body .boss #header .enter {
+  position: absolute;
+  width: 176px;
+  height: 42px;
+  background: url("../images/spirit_index.png") no-repeat -710px -951px;
+  right: 250px;
+  top: 0;
+  z-index: 1;
+}
+body .boss #header .enter:hover {
+  background-position: -534px -951px;
+}
+body .boss #header .intro {
+  width: 231px;
+  height: 233px;
+  position: absolute;
+  z-index: 1;
+  background: url("../images/intro.png") no-repeat;
+  right: 280px;
+  top: 125px;
+}
+body .boss #header .logo {
+  width: 104px;
+  height: 337px;
+  z-index: 1;
+  position: absolute;
+  text-indent: -999em;
+  background: url("../images/logo.png") no-repeat;
+  left: 250px;
+  top: 45px;
+}
+body .boss #header .logo a {
+  width: 107px;
+  height: 205px;
+  display: block;
+  margin-top: -25px;
+}
+body .boss #section {
+  height: 391px;
+  background: url('../images/section.webp') no-repeat;
+  position: relative;
+}
+body .boss #section .getGift {
+  width: 267px;
+  height: 49px;
+  position: absolute;
+  right: 335px;
+  bottom: 25px;
+  background: url("../images/spirit_index.png") no-repeat -717px -867px;
+}
+body .boss #section .getGift:hover {
+  background-position: -450px -867px;
+}
+body .boss #section .fastDown {
+  width: 267px;
+  height: 49px;
+  position: absolute;
+  bottom: 25px;
+  right: 835px;
+  background: url("../images/spirit_index.png") no-repeat -267px -951px;
+}
+body .boss #section .fastDown:hover {
+  background-position: 0 -951px;
+}
+body .boss #section .fastDown-content {
+  width: 266px;
+  height: 240px;
+  position: absolute;
+  top: 75px;
+  left: 815px;
+}
+body .boss #section .fastDown-content .cold {
+  display: block;
+  width: 107px;
+  height: 107px;
+  margin: 50px auto;
+  background: url('../images/cold.png') no-repeat;
+}
+body .boss #section .fastDown-content .loop-c1 {
+  left: 58px;
+  top: 29px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url("../images/loopc1.png") no-repeat;
+  animation: waveOut_1 1.3s ease-out infinite both;
+}
+body .boss #section .fastDown-content .loop-c2 {
+  left: 68px;
+  top: 40px;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background: url("../images/loopc2.png") no-repeat;
+  animation: waveOut_2 1.3s ease-out 0.3s infinite both;
+}
+@keyframes waveOut_1 {
+  0% {
+    opacity: 1;
+    transform: scale(0.6);
+  }
+  75%,
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+@keyframes waveOut_2 {
+  0% {
+    opacity: 1;
+    transform: scale(0.6);
+  }
+  75%,
+  100% {
+    opacity: 0;
+    transform: scale(1.8);
+  }
+}
+body .boss #section .fast-register {
+  width: 330px;
+  height: 300px;
+  position: absolute;
+  top: 70px;
+  left: 370px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+body .boss #section .fast-register input {
+  width: 266px;
+  height: 38px;
+  background-color: #f5f8ff;
+  padding: 0 5px;
+  border: 1px solid #62a1c9;
+  margin-top: 10px;
+}
+body .boss #section .fast-register .register {
+  width: 267px;
+  height: 49px;
+  display: block;
+  background: url("../images/registerbtn.png") no-repeat;
+  margin: 5px 0 5px 5px;
+}
+body .boss #section .fast-register .register:hover {
+  background-position: 0 -50px;
+}
+body .boss #section .fast-register p {
+  padding-top: 20px;
+  width: 264px;
+  height: 84px;
+  color: #fff;
+}
+body .boss #section .fast-register p a {
+  color: #fff;
+}
+body .boss #section .fast-register p a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+body .boss #slideBox {
+  width: 1920px;
+  height: 763px;
+  background: url("../images/slidebg.png") no-repeat;
+  position: relative;
+  margin-top: 100px;
+}
+body .boss #slideBox #slideShow {
+  width: 1753px;
+  height: 701px;
+  position: absolute;
+  right: -17px;
+}
+body .boss #slideBox #slideShow li {
+  position: absolute;
+  display: none;
+}
+body .boss #slideBox #slideShow li:first-of-type {
+  display: block;
+}
+body .boss #slideBox #slideNav {
+  position: absolute;
+  background: url("../images/nav1.png") no-repeat;
+  z-index: 1;
+  width: 260px;
+  height: 554px;
+  right: 288px;
+  top: -70px;
+  padding: 154px 0 0 34px;
+  box-sizing: border-box;
+}
+body .boss #slideBox #slideNav li {
+  width: 35px;
+  height: 190px;
+  cursor: pointer;
+  background: url("../images/nav2.png") no-repeat;
+  float: left;
+  margin-right: 18px;
+}
+body .boss #slideBox #slideNav li.active {
+  background-color: #62a1c9 !important;
+}
+body .boss #slideBox #slideNav li:first-of-type {
+  background-position: 0 -187px;
+}
+body .boss #slideBox #slideNav li:nth-of-type(2) {
+  background-position: -54px -187px;
+}
+body .boss #slideBox #slideNav li:nth-of-type(3) {
+  background-position: -107px -187px;
+}
+body .boss #slideBox #slideNav li:last-of-type {
+  background-position: -161px -187px;
+}
+body .boss #dynamic {
+  height: 695px;
+  background: url("../images/dynamicbg.png") no-repeat center bottom;
+  position: relative;
+  margin-top: 100px;
+}
+body .boss #dynamic .dynamicNav {
+  position: absolute;
+  right: 350px;
+  top: 45px;
+  z-index: 999;
+}
+body .boss #dynamic .dynamicNav a {
+  width: 104px;
+  height: 24px;
+  background-color: red;
+  margin-bottom: 10px;
+  display: block;
+  background: url("../images/navsprite.png") no-repeat;
+}
+body .boss #dynamic .dynamicNav a#nav-ly {
+  width: 131px;
+  height: 25px;
+  background: url("../images/navly.png") no-repeat;
+}
+body .boss #dynamic .dynamicNav a#nav-xh {
+  background-position: 0 -600px;
+}
+body .boss #dynamic .dynamicNav a#nav-sw {
+  background-position: 0 -635px;
+}
+body .boss #dynamic .dynamicNav a.active {
+  background-color: #62a1c9 !important;
+}
+body .boss #dynamic .dynamic-body {
+  perspective: 1000px;
+}
+@keyframes boomIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideUpIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+body .boss #dynamic .dynamic-body .ly-body {
+  width: 100%;
+  height: 763px;
+  position: absolute;
+}
+body .boss #dynamic .dynamic-body .ly-body video {
+  width: 1013px;
+  height: 590px;
+  position: absolute;
+}
+body .boss #dynamic .dynamic-body .ly-body .per {
+  position: absolute;
+  top: -83px;
+}
+body .boss #dynamic .dynamic-body .ly-body .attr-pro {
+  width: 260px;
+  height: 632px;
+  position: absolute;
+  top: 0;
+  left: 472px;
+  background: url("../images/attrbgpic.png") no-repeat;
+}
+body .boss #dynamic .dynamic-body .ly-body .attr-pro .attr-square {
+  margin: 0 auto;
+  width: 150px;
+  height: 81px;
+  background: url('../images/spirit_index.png') no-repeat -471px -766px;
+  animation: pulse 1s ease-out infinite alternate;
+}
+body .boss #dynamic .dynamic-body .ly-body .attr-pro .weapon {
+  width: 118px;
+  height: 101px;
+  background: url('../images/spirit_index.png') no-repeat -704px -469px;
+  margin: 20px auto 0;
+  animation: slideDown 0.3s 0.5s ease both;
+}
+body .boss #dynamic .dynamic-body .ly-body .attr-pro .attrPic {
+  width: 197px;
+  height: 187px;
+  background: url("../images/spirit_index.png") no-repeat -394px -579px;
+  margin: 20px auto 0;
+  animation: slideUpIn 0.3s 0.8s ease both;
+}
+body .boss #dynamic .dynamic-body .ly-body .attr-pro .bigName {
+  position: absolute;
+  width: 234px;
+  height: 290px;
+  background: url("../images/spirit_index.png") no-repeat 0 -290px;
+  right: -680px;
+  top: 0;
+  animation: boomIn 0.2s 1s ease both;
+}
+body .boss #dynamic .dynamic-body .xh-body {
+  width: 100%;
+  height: 763px;
+  position: absolute;
+  display: none;
+}
+body .boss #dynamic .dynamic-body .xh-body video {
+  width: 1013px;
+  height: 590px;
+  position: absolute;
+}
+body .boss #dynamic .dynamic-body .xh-body .per {
+  position: absolute;
+  top: -83px;
+}
+body .boss #dynamic .dynamic-body .xh-body .attr-pro {
+  width: 260px;
+  height: 632px;
+  position: absolute;
+  top: 0;
+  left: 472px;
+  background: url("../images/attrbgpic.png") no-repeat;
+}
+body .boss #dynamic .dynamic-body .xh-body .attr-pro .attr-square {
+  margin: 0 auto;
+  width: 150px;
+  height: 81px;
+  background: url('../images/spirit_index.png') no-repeat 0px -869px;
+  animation: pulse 1s ease-out infinite alternate;
+}
+body .boss #dynamic .dynamic-body .xh-body .attr-pro .weapon {
+  width: 118px;
+  height: 101px;
+  background: url('../images/spirit_index.png') no-repeat -235px -766px;
+  margin: 20px auto 0;
+  animation: slideDown 0.3s 0.5s ease both;
+}
+body .boss #dynamic .dynamic-body .xh-body .attr-pro .attrPic {
+  width: 197px;
+  height: 187px;
+  background: url("../images/spirit_index.png") no-repeat -197px -579px;
+  margin: 20px auto 0;
+  animation: slideUpIn 0.3s 0.8s ease both;
+}
+body .boss #dynamic .dynamic-body .xh-body .attr-pro .bigName {
+  position: absolute;
+  width: 234px;
+  height: 290px;
+  background: url("../images/spirit_index.png") no-repeat -704px 0;
+  right: -680px;
+  top: 0;
+  animation: boomIn 0.2s 1s ease both;
+}
+body .boss #dynamic .dynamic-body .sw-body {
+  width: 100%;
+  height: 763px;
+  position: absolute;
+  display: none;
+}
+body .boss #dynamic .dynamic-body .sw-body video {
+  width: 1013px;
+  height: 590px;
+  position: absolute;
+}
+body .boss #dynamic .dynamic-body .sw-body .per {
+  position: absolute;
+  top: -83px;
+}
+body .boss #dynamic .dynamic-body .sw-body .attr-pro {
+  width: 260px;
+  height: 632px;
+  position: absolute;
+  top: 0;
+  left: 472px;
+  background: url("../images/attrbgpic.png") no-repeat;
+}
+body .boss #dynamic .dynamic-body .sw-body .attr-pro .attr-square {
+  margin: 0 auto;
+  width: 150px;
+  height: 81px;
+  background: url('../images/spirit_index.png') no-repeat -921px -767px;
+  animation: pulse 1s ease-out infinite alternate;
+}
+body .boss #dynamic .dynamic-body .sw-body .attr-pro .weapon {
+  width: 118px;
+  height: 101px;
+  background: url('../images/spirit_index.png') no-repeat -118px -766px;
+  margin: 20px auto 0;
+  animation: slideDown 0.3s 0.5s ease both;
+}
+body .boss #dynamic .dynamic-body .sw-body .attr-pro .attrPic {
+  width: 197px;
+  height: 187px;
+  background: url("../images/spirit_index.png") no-repeat -704px -282px;
+  margin: 20px auto 0;
+  animation: slideUpIn 0.3s 0.8s ease both;
+}
+body .boss #dynamic .dynamic-body .sw-body .attr-pro .bigName {
+  position: absolute;
+  width: 234px;
+  height: 290px;
+  background: url("../images/spirit_index.png") no-repeat -466px -290px;
+  right: -680px;
+  top: 0;
+  animation: boomIn 0.2s 1s ease both;
+}
+body .boss #footer {
+  padding-top: 100px;
+}
+body .boss #footer .friendLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+body .boss #footer .friendLink span {
+  color: #7e869b;
+}
+body .boss #footer .friendLink ul {
+  padding-left: 10px;
+}
+body .boss #footer .friendLink ul li {
+  float: left;
+}
+body .boss #footer .friendLink ul li a {
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 36px;
+  color: #7e869b;
+  margin-right: 10px;
+}
+body .boss #footer .friendLink ul li a:hover {
+  color: #c0ab6f;
+}
+body .boss #footer .footerMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .boss #footer .footerMessage .footer-logo {
+  float: left;
+}
+body .boss #footer .footerMessage .footer-logo a {
+  padding: 5px;
+}
+body .boss #footer .footerMessage .footer-nav a {
+  line-height: 30px;
+}
+body .boss #footer .footerMessage .footer-nav a:hover {
+  text-decoration: underline;
+}
+body .boss #footer .footerMessage .footer-nav .footer-nav-in a {
+  float: right;
+  background-color: #610000;
+  height: 26px;
+  line-height: 26px;
+  color: #fff;
+  padding: 2px 2px;
+}
+body .boss #footer p {
+  text-align: center;
+  line-height: 30px;
+}
+/*# sourceMappingURL=index.css.map */

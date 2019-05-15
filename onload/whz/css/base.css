@@ -1,0 +1,54 @@
+@charset "utf-8";
+body,
+p,
+a,
+span,
+div,
+img,
+i,
+ul,
+li,
+i,
+em,
+ins,
+strong,
+del,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  font: 12px/100% "微软雅黑";
+  background-color: #fff;
+}
+input {
+  border: 0 none;
+  outline: none;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}

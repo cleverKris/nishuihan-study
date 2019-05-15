@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, 
+          maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kris</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #slideBox {
+            margin-top: 50px;
+            position: relative;
+            width: 1753px;
+            height: 701px;
+        }
+
+
+        #slideShow li {
+            position: absolute;
+            display: none;
+        }
+
+        #slideShow li:first-of-type {
+            display: block;
+        }
+
+        #slideNav {
+            position: absolute;
+            background: url("images/nav1.png") no-repeat;
+            z-index: 1;
+            width: 260px;
+            height: 554px;
+            right: 180px;
+            top: -50px;
+            padding: 154px 0 0 34px;
+            box-sizing: border-box;
+        }
+
+
+        #slideNav ul li {
+            width: 35px;
+            height: 190px;
+            cursor: pointer;
+            background: url("images/nav2.png") no-repeat;
+            float: left;
+            margin-right: 18px;
+        }
+
+        #slideNav ul li:first-of-type {
+            background-position: 0 -187px;
+        }
+
+        #slideNav ul li:nth-of-type(2) {
+            background-position: -54px -187px;
+        }
+
+        #slideNav ul li:nth-of-type(3) {
+            background-position: -107px -187px;
+        }
+
+        #slideNav ul li:last-of-type {
+            background-position: -161px -187px;
+        }
+
+        /*#slideNav ul li:first-of-type:hover {*/
+        /*background-position: 0 0;*/
+        /*}*/
+
+        /*#slideNav ul li:nth-of-type(2):hover {*/
+        /*background-position: -54px 0;*/
+        /*}*/
+
+        /*#slideNav ul li:nth-of-type(3):hover {*/
+        /*background-position: -107px 0;*/
+        /*}*/
+
+        /*#slideNav ul li:last-of-type:hover {*/
+        /*background-position: -161px 0;*/
+        /*}*/
+        .active {
+            background-color: #62a1c9 !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="slideBox">
+        <!--轮播图盒子-->
+        <ul id="slideShow">
+            <li>
+                <a href="#"><img src="./images/01.webp" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/02.webp" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/03.webp" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/04.webp" alt=""></a>
+            </li>
+        </ul>
+        <!--轮播导航-->
+        <nav id="slideNav">
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            //1.获取每个导航的li
+            var $navList = $('#slideNav>ul>li');
+            var index = 0;//声明一个变量 表示当前图片的索引
+
+            //2.自动轮播:自动淡入淡出效果 并且鼠标移入不清空定时器
+            function autoSlide() {
+                //让对应index值的索引的图片淡入,让它的兄弟图片淡出
+                $('#slideShow>li').eq(index).stop(true, false).fadeIn(500).siblings('li').stop(true, false).fadeOut(500);
+                //并且让对应的导航轮播的li应用类样式
+                $navList.eq(index).addClass('active').siblings('li').removeClass('active');
+                index++;//每执行一次定时器,index值++
+                if (index > $('#slideShow>li').length - 1) { //index的值始终保持的范围在 0-3(图片的索引)
+                    index = 0;
+                }
+            }
+
+            autoSlide();//先调用一次
+
+            setInterval(autoSlide, 2000);
+
+            //3.为导航的li注册鼠标移入事件
+            $navList.mouseenter(function () {
+                //TODO:让当前移入的导航栏li,显示它对应的背景position值
+                $(this).addClass('active').siblings('li').removeClass('active');
+                var idxNav = $(this).index();//轮播导航的索引
+                //鼠标移入当前索引的轮播导航的时候,让对应的轮播图淡入,它的兄弟轮播图淡出
+                //这就形成了一个动画队列,每次移入新的一个的时候,应该清空队列,并且上一次不到达最终效果
+                $('#slideShow>li').eq(idxNav).stop(true, false).fadeIn(500).siblings('li').stop(true, false).fadeOut(500);
+                //****因为当鼠标移入再移出后会图片并不是根据当前的index继续做轮播, 而是回到了定时器的index, 显得特别的不协调
+                //解决:就是当鼠标移入的时候,下一次做自动轮播 应该是 根据当前的idxNav去做自动轮播
+                index = idxNav;
+            });
+        });
+    </script>
+</body>
+</html>

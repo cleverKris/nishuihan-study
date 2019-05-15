@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style: none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+input {
+    border: 0;
+    outline: none;
+}
+i {
+    font-style: normal;
+}
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clear {
+    *zoom: 1;
+}

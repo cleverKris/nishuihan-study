@@ -1,0 +1,460 @@
+@import './base.less';
+
+
+    //导航栏模块开始
+#header{
+    height: 78px;
+    width: 100%;
+    background: url('../images/navbg.png'); 
+    
+    z-index: 999;
+    #top{
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    
+        
+        .logo{
+            width: 170px;
+            height: 32px;
+            position: absolute;
+            left: 0;
+            top: 23px;
+            display: block;
+            background: url('../images/logo.png')no-repeat;
+        };
+        .nav{
+            font-size: 14px;
+            color: #a7a7a7;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            a{
+                padding: 0 20px;
+                color: #a7a7a7;
+
+                &:hover{
+                    color: #f0f0f0;
+                }
+            };
+        };
+        .menu{
+            position: absolute;
+            right: 0;
+            top: 21px;
+
+            a{
+                display: block;
+                width: 132px;
+                height: 37px;
+                text-indent: -9999px;
+                background: url('../images/menu.png') no-repeat;
+                float: left;
+                overflow: hidden;
+
+                &:hover{
+                    background-position-y: -35px;
+                }
+            };
+            .m1{
+                background-position: 0 -35px;
+            }
+            .m2{
+                background-position: -140px 10px;
+            }
+            .m3{
+                background-position: -280px 10px;
+            }
+            .m4{
+                background-position-x: -420px;
+                background-position-y: 10px;
+            }
+        }
+    }
+    
+}
+//导航栏模块结束
+
+//轮播图模块开始
+    #slideShow{
+    height: 442px;
+    position: relative;
+    #slideWrap{
+        height: 442px;
+        position: relative;
+        overflow: hidden;
+
+        .slideol{
+            text-align: center;
+            height: 38px;
+            position: absolute;
+            bottom: -6px;
+            width: 100%;
+            z-index: 99;
+            ol{
+                display: inline-block;
+                margin: 0 auto;
+                zoom: 1;
+
+                li{
+                    float: left;
+
+                    a{
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                        text-indent: -999999px;
+                        background-color: #ccc;
+                        margin: 0 6px;
+                    };
+                };
+            };
+        };
+        ul{
+            width: 9999px;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            li{
+                float: left;
+
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 442px;
+                    position: relative;
+                    // overflow: hidden;
+                };
+            };
+
+            
+        };
+       
+    };
+    #slideBtn{
+        width: 1200px;
+        margin: 0 auto;
+        a{
+            position: absolute;
+            width: 37px;
+            height: 63px;
+            background: url('../images/arrow.png') no-repeat;
+            z-index: 99;
+            top: 65px;
+            cursor: pointer;
+            text-indent: -9999px;
+        };
+        #prev{
+            background-position: 0 -64px;
+            left: 50%;
+            margin-left: -550px;
+            top: 50%;
+
+            
+        };
+        #next{
+            background-position: -40px -64px;
+            right: 50%;
+            margin-right: -550px;
+            top: 50%;
+        };
+    };
+    
+    }
+
+
+
+    //资讯模块
+    .mainbox{
+        position: absolute;
+        left: 50%;
+        top: 120px;
+        margin-left: 250px;
+        z-index: 3;
+
+        .maincon{
+            width: 250px;
+            height: 370px;
+            padding: 0 15px;
+            border-top: 5px solid #d21b35;
+            background: rgba(0,0,0,.8);
+            
+            
+            
+            .mn_tt{
+                height: 55px;
+                line-height: 41px;
+                padding-top: 13px;
+                border-bottom: solid 1px #ddd;
+                
+                
+
+
+                .cha{
+                    float: right;
+                    background: url('../images/more.png') no-repeat right center;
+                    padding-right: 20px;
+                    color: #a7a7a7;
+
+                    &:hover{
+                        border-bottom: 1px solid #f0f0f0;
+                        color: #f0f0f0;
+                    }
+                };
+    
+                .strong{
+                    font-size: 21px;
+                    color: #fff;
+                    font-weight :700;
+                    float: left;
+    
+                };
+                
+            }
+            
+
+            ul{
+                
+                li{
+                    border-top: 1px dotted #5e6262;
+                    background: url('../images/rpoint.png') no-repeat 0 15px;
+                    line-height: 32px;
+                    height: 40px;
+                    overflow: hidden;
+                    padding-left: 15px;
+                    padding-bottom: 4px;
+
+                    
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        color: #a7a7a7;
+                        font-family: 'simSun';
+                        font-size: 14px;
+
+                        &:hover{
+                            border-bottom: 1px solid #f0f0f0;
+                            color: #f0f0f0;
+                        }
+    
+
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    //轮播图模块结束 
+
+
+
+    //充值产品区域开始
+
+    #main{
+        .main{
+            background-color: #fff;
+
+
+            #center{
+                width: 1000px;
+                margin: 0 auto;
+                position: relative;
+                padding-bottom: 20px;
+
+
+                .title{
+                    line-height: 72px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #d21b35;
+                };
+
+                .gametab{
+                    margin-left: -1px;
+
+                    li{
+                        float: left;
+
+                                            
+
+                        a{
+                            width: 250px;
+                            height: 52px;
+                            display: block;
+                            background: url('../images/nav.jpg') no-repeat;
+
+                            &:hover{
+                                background-position-y: -52px ;
+                            } 
+                            
+                        };
+                        .remen.current{
+                            background-position: 0 -52px;
+                            
+                        }
+
+                        .duanyou{
+                            background-position: -250px 0;
+                        };
+
+                        .shouyou{
+                            background-position: -500px 0;
+                        };
+
+                        .qita{
+                            background-position: -750px 0;
+                        }
+                    }
+                }
+
+                .tab{
+                    border-left: 1px solid #f0f0f0;
+                    border-right: 1px solid #f0f0f0;
+                    padding-top: 5px;
+                    .selected{
+                        display: block;
+                    }
+                }
+                
+                .tab,
+                .tab,
+                .tab{
+                    border-left: 1px solid #f0f0f0;
+                    border-right: 1px solid #f0f0f0;
+                    padding-top: 5px;
+                    display: none;
+
+                    
+                }
+                .selected{
+                    display: block;
+                }
+                
+            };
+
+        };
+    };
+
+
+
+    //底部模块开始
+    #footer{
+        background-color: #f0f0f0;
+        text-align: center;
+        min-width: 1000px;
+        position: relative;
+        padding-top: 20px;
+        clear: both;
+        overflow: hidden;
+
+        .intro{
+            width: 1000px;
+            margin: 0 auto;
+            color: #626262;
+            font-size: 14px;
+
+            .wenti{
+                background:url('../images/wenti.png') no-repeat left top;
+                width: 90px;
+                text-align: right;
+                line-height: 20px;
+                float: left;
+                margin: 6px 30px 0 0;
+            };
+
+            ul{
+                width: 400px;
+                float: left;
+
+
+                li{
+                    width: 185px;
+                    background: url('../images/point.png') no-repeat left;
+                    text-align: left;
+                    padding-left: 15px;
+                    float: left;
+                    line-height: 32px;
+                    font-family: 'simSun';
+
+                    a{
+                        color: #999999;
+
+                        &:hover{
+                            border-bottom: 1px solid #999999;
+                            
+                        }
+
+                    };
+                };
+
+                .else{
+                    background: 0 0;
+
+                    a{
+                        color: #d21b35;
+                        text-decoration: underline;
+                    };
+                };
+            };
+
+            .kefu{
+                background: url('../images/kefu.png') no-repeat left top;
+                width: 90px;
+                text-align: right;
+                line-height: 20px;
+                float: left;
+                margin: 6px 30px 0 20px;
+            };
+            .kefu_detail{
+                width: 180px;
+                float: left;
+                text-align: left;
+
+                .title{
+                    padding-top:6px;
+                };
+
+                
+                    .tel{
+                        font-size: 12px;
+                        color: #999999;
+
+                        a{
+                            color: #999999;
+                        };
+                    };
+                
+            };
+        };
+
+        #NIE-copyRight{
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            color: #939393;
+            padding: 25px 0 40px 0;
+            clear: both;
+
+            #NIE-copyRight-crop{
+                border-top: 1px dotted #939393;
+                width: 100%;
+                padding-top: 15px;
+                font: 12px '宋体';
+                display: block;
+                line-height: 20px;
+                position: relative;
+
+                #ncp11{
+                    a{
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+

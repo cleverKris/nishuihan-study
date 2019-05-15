@@ -1,0 +1,66 @@
+nav,
+header,
+footer,
+body,
+div,
+span,
+p,
+a,
+img,
+input,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+del,
+ins,
+em,
+i {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+input {
+  outline: none;
+  border: 0 none;
+}
+ul {
+  list-style: none;
+}
+i,
+em {
+  font-style: normal;
+}
+body {
+  font: 12px/100% "微软雅黑";
+}
+.clearfix::after {
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.w {
+  width: 1920px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=base.css.map */

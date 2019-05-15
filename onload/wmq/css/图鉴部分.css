@@ -1,0 +1,254 @@
+/* 单独作为一个文件存在的css初始化代码 */
+body,
+div,
+span,
+p,
+a,
+img,
+input,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+strong,
+del,
+em,
+ins,
+i,
+header,
+nav,
+footer {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0 none;
+  outline: none;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+.w {
+  width: 1050px;
+}
+body {
+  font: 12px/100% "微软雅黑";
+}
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.bl {
+  border-left: 0.01rem solid #fff;
+}
+.br {
+  border-right: 0.01rem solid #fff;
+}
+.bt {
+  border-top: 0.01rem solid #fff;
+}
+.bb {
+  border-bottom: 0.01rem solid #fff;
+}
+.innerbox {
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #000;
+  font-size: 0.7rem;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, "黑体", Arial, Tahoma;
+  height: 100%;
+}
+/*滚动条样式*/
+.innerbox::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 4px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 4px;
+}
+.innerbox::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+.innerbox::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+body #main-bz {
+  height: 1080px;
+  background: url('../images/bg_bedb98d.jpg') no-repeat -250px -100px;
+  background-size: 150%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+body #main-bz .w {
+  width: 1050px;
+  height: 1080px;
+  margin: 0 0 0 210px;
+  position: relative;
+  overflow: hidden;
+}
+body #main-bz .w .bz-title {
+  width: 321px;
+  height: 49px;
+  margin-top: 110px;
+  margin-left: 50px;
+  background: url('../images/title_71cbf98.png');
+}
+body #main-bz .w nav {
+  width: 100%;
+  height: 24px;
+  padding-right: 130px;
+  box-sizing: border-box;
+  text-align: right;
+  margin-bottom: 15px;
+}
+body #main-bz .w nav a {
+  position: relative;
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  margin-left: 30px;
+  padding: 0 6px;
+  text-align: center;
+  color: #fff;
+}
+body #main-bz .w nav a:not(:nth-child(4))::after {
+  content: "";
+  background: url('../images/line_50d54df.png');
+  width: 16px;
+  height: 9px;
+  position: absolute;
+  right: -25px;
+  top: 9px;
+}
+body #main-bz .w nav .active {
+  color: #e9e0b9;
+}
+body #main-bz .w nav .active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -7px;
+  left: 0;
+  background-color: #aa9452;
+}
+body #main-bz .w .tab {
+  height: 700px;
+}
+body #main-bz .w .tab .com {
+  height: 650px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+body #main-bz .w .tab .com::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 0;
+}
+body #main-bz .w .tab .com ul {
+  width: 935px;
+  margin: 12px auto;
+}
+body #main-bz .w .tab .com ul li {
+  height: 155px;
+  width: 300px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+body #main-bz .w .tab .com ul li .mask i {
+  background: url('../images/index_z_8de7eab.png') no-repeat -1348px -378px;
+  width: 75px;
+  height: 73px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+body #main-bz .w .tab .com ul li img {
+  width: 100%;
+  height: 100%;
+}
+body #main-bz .w .tab .com ul li p {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  line-height: 28px;
+  position: relative;
+}
+body #main-bz .w .tab .com ul li p i {
+  width: 6px;
+  height: 1px;
+  background: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 3px;
+}
+body #main-bz .w .tab .com ul li:nth-child(3n) {
+  margin-right: 0;
+}
+body #main-bz .w .top-btn {
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  right: 0;
+  bottom: 150px;
+  background: url('../images/index_z_8de7eab.png') no-repeat -1423px -378px;
+  cursor: pointer;
+}
+body #main-bz .w .xl-btn {
+  width: 71px;
+  height: 46px;
+  margin: 5px auto;
+  background: url('../images/index_z_8de7eab.png') no-repeat -1269px -528px;
+}
+body #main-bz .video-page {
+  width: 302px;
+  height: 1080px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background: url('../images/index_z_8de7eab.png') no-repeat -896px 0px;
+  cursor: pointer;
+}
+body #main-bz .video-page:hover {
+  background-position: -594px 0px;
+}
+/*# sourceMappingURL=图鉴部分.css.map */

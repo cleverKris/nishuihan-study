@@ -1,0 +1,201 @@
+@import '视频鉴赏base.less';
+
+
+body {
+
+    //右侧图鉴主体样式
+    #main-bz {
+        // width: 1400px;
+        height: 1080px;
+        // background: pink;
+        background: url('../images/bg_bedb98d.jpg') no-repeat -250px -100px;
+        background-size: 150%;
+        // display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        .w {
+            width: 1050px;
+            height: 1080px;
+            margin: 0 0 0 210px;
+            position: relative;
+            overflow: hidden;
+
+            //图鉴标题
+            .bz-title {
+                width: 321px;
+                height: 49px;
+                // position: absolute;
+                margin-top: 110px;
+                margin-left: 50px;
+                background: url('../images/title_71cbf98.png');
+            }
+
+            // 导航栏
+            nav {
+                width: 100%;
+                height: 24px;
+                padding-right: 130px;
+                box-sizing: border-box;
+                text-align: right;
+                margin-bottom: 15px;
+
+                a {
+                    position: relative;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 18px;
+                    margin-left: 30px;
+                    padding: 0 6px;
+                    text-align: center;
+                    color: #fff;
+                }
+
+                a {
+                    &:not(:nth-child(4)) {
+                        &::after {
+                            // color: #e9e0b9;
+                            content: "";
+                            position: absolute;
+                            background: url('../images/line_50d54df.png');
+                            width: 16px;
+                            height: 9px;
+                            position: absolute;
+                            right: -25px;
+                            top: 9px;
+                        }
+
+                    }
+                }
+
+                .active {
+                    color: #e9e0b9;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        bottom: -7px;
+                        left: 0;
+                        background-color: #aa9452;
+                    }
+                }
+            }
+
+            //图鉴列表
+            .tab {
+                // width: 1050px;
+                height: 700px;
+
+                // background: pink;
+                .com {
+                    height: 650px;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+
+                    &::-webkit-scrollbar {
+                        /*滚动条整体样式*/
+                        width: 0;
+                        /*高宽分别对应横竖滚动条的尺寸*/
+                        height: 0;
+                    }
+
+                    // display: none;
+                    ul {
+                        width: 935px;
+                        margin: 12px auto;
+
+                        li {
+                            height: 155px;
+                            width: 300px;
+                            margin-right: 15px;
+                            margin-bottom: 15px;
+                            float: left;
+                            position: relative;
+                            overflow: hidden;
+                            cursor: pointer;
+
+                            .mask {
+                                i {
+                                    background: url('../images/index_z_8de7eab.png') no-repeat -1348px -378px;
+                                    width: 75px;
+                                    height: 73px;
+                                    position: absolute;
+                                    left: 50%;
+                                    top: 50%;
+                                    transform: translate(-50%, -50%);
+                                    display: none;
+                                }
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            p {
+                                width: 100%;
+                                text-align: center;
+                                font-size: 14px;
+                                color: #fff;
+                                line-height: 28px;
+                                position: relative;
+
+                                i {
+                                    width: 6px;
+                                    height: 1px;
+                                    background: #fff;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    margin: 0 3px;
+                                }
+                            }
+                        }
+
+                        li:nth-child(3n) {
+                            margin-right: 0;
+                        }
+                    }
+
+                }
+            }
+
+            //置顶按钮
+            .top-btn {
+                width: 53px;
+                height: 53px;
+                position: absolute;
+                right: 0;
+                bottom: 150px;
+                background: url('../images/index_z_8de7eab.png') no-repeat -1423px -378px;
+                cursor: pointer;
+            }
+
+            //下拉按钮
+            .xl-btn {
+                width: 71px;
+                height: 46px;
+                margin: 5px auto;
+                background: url('../images/index_z_8de7eab.png') no-repeat -1269px -528px;
+            }
+        }
+
+        //切换栏
+        .video-page {
+            width: 302px;
+            height: 1080px;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: -20px;
+            // background: red;
+            background: url('../images/index_z_8de7eab.png') no-repeat -896px 0px;
+            cursor: pointer;
+            &:hover {
+                background-position: -594px 0px;
+            }
+        }
+    }
+}

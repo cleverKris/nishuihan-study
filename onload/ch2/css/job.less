@@ -1,0 +1,1467 @@
+@import 'base.less';
+
+#video {
+    width: 1200px;
+    height: 678px;
+    background-color: #0ff;
+    position: fixed;
+    z-index: 10;
+    right: 350px;
+    top: 200px;
+
+}
+
+#a {
+    position: fixed;
+    right: 310px;
+    top: 200px;
+    z-index: 99;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+}
+.box:nth-child(1) {
+    .main {
+        width: 1903px;
+        height: 1080px;
+        background: url('../images/bg_longyin.jpg');
+        // background-position: 0 0;
+        overflow: hidden;
+        position: relative;
+    
+        .bg {
+            position: relative;
+            width: 100px;
+            height: 100px;
+    
+            #woman {
+                width: 1400px;
+                position: absolute;
+                left: -80px;
+                top: 50px;
+                transform-style: preserve-3d;
+                perspective: 1000px;   
+                
+                // transform: rotateY(20deg);
+            }
+    
+            #man {
+                width: 1400px;
+                position: absolute;
+                left: -80px;
+                top: 50px;
+            }
+    
+            /* 侧栏部分 */
+            .celan {
+                width: 112px;
+                height: 800px;
+                // background-color: #0ff;
+                position: absolute;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                top: 50px;
+                left: 10px;
+                display: flex;
+    
+                /* logobu部分 */
+                .logo {
+                    width: 78px;
+                    height: 209px;
+                    background: url('../images/logo_28d0be6.png') no-repeat;
+                    background-size: 100%;
+                }
+    
+                /* 分享部分 */
+                .fenxiang {
+                    width: 32px;
+                    height: 75px;
+                    // background-color: pink;
+    
+                    .btn-list {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+    
+                        .fen-btn {
+                            display: flex;
+                            width: 32px;
+                            height: 32px;
+                            // background-color: red;
+                            background: url('../images/index-icon-fenxiang.png') no-repeat;
+    
+                        }
+    
+                        .fen-btn:nth-child(2) {
+                            background-position-y: -42px;
+                            position: relative;
+    
+                            #weixin {
+                                width: 140px;
+                                height: 32px;
+                                position: absolute;
+                                // top: 100px;
+                                left: 50px;
+                                // background-color: rgba(0, 255, 255, .3);
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+    
+                                li {
+                                    width: 34px;
+                                    height: 34px;
+                                    // background-color: pink;
+                                    background: url('../images/share_weixin.png')no-repeat;
+                                    background-size: 156px 71px;
+    
+                                    a {
+                                        display: flex;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .huan {
+                                    width: 34px;
+                                    height: 34px;
+                                    // background-color: pink;
+                                    background: url('../images/share-weixin1.png')no-repeat;
+                                background-size: 156px 34px;
+                                }
+                                li:nth-child(2) {
+                                    background-position-x: -43px;
+                                }
+                                li:nth-child(3) {
+                                    background-position-x: -82px;
+                                }
+                                li:nth-child(4) {
+                                    background-position-x: -124px;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+    
+                /* 职业选择部分 */
+                .nav {
+                    width: 60px;
+                    height: 500px;
+                    // background-color: green;
+    
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        .yidong {
+                            background-position-x: -70px;
+                        }
+    
+                        .xuan {
+                            background-position-x: -70px;
+                        }
+    
+                        li {
+                            width: 60px;
+                            height: 70px;
+                            // background-color: pink;
+                            background: url('../images/nav_zhiye.png')no-repeat;
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+    
+    
+                        li:nth-child(2) {
+                            background-position-y: -74px;
+                        }
+    
+                        li:nth-child(3) {
+                            background-position-y: -148px;
+                        }
+    
+                        li:nth-child(4) {
+                            background-position-y: -222px;
+                        }
+    
+                        li:nth-child(5) {
+                            background-position-y: -296px;
+                        }
+    
+                        li:nth-child(6) {
+                            background-position-y: -370px;
+                        }
+    
+                        li:nth-child(7) {
+                            background-position-y: -442px;
+                        }
+    
+                    }
+                }
+            }
+        }
+    
+        .name {
+            position: relative;
+            right: -1400px;
+            top: -80px;
+            width: 312px;
+            height: 473px;
+            background: url('../images/name_longyin.png')no-repeat;
+        }
+    
+    
+        .jineng {
+            position: relative;
+            right: -1580px;
+            top: -500px;
+            z-index: 2;
+            width: 275px;
+            height: 645px;
+            background: url('../images/jineng-longyin.png')no-repeat;
+        }
+    
+        .sex {
+            width: 55px;
+            height: 124px;
+            position: relative;
+            right: -1500px;
+            top: -650px;
+    
+            // background: url('../images/')
+            // background-color: #0ff;
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+    
+                .sex-w {
+                    width: 55px;
+                    height: 62px;
+                    background-color: pink;
+                    background: url('../images/gender-sex.png')
+                }
+    
+                .sex-w:nth-child(2) {
+                    background-position-y: -62px;
+                }
+    
+                .xuan {
+                    width: 55px;
+                    height: 62px;
+                    background-color: pink;
+                    background: url('../images/gender-sex-2.png')
+                }
+    
+                .xuan:nth-child(2) {
+                    background-position-y: -62px;
+                }
+    
+                .dong {
+                    width: 55px;
+                    height: 62px;
+                    background-color: pink;
+                    background: url('../images/gender-sex-2.png')
+                }
+    
+                .dong:nth-child(2) {
+                    background-position-y: -62px;
+                }
+            }
+        }
+    
+        /* 宗门部分开始 */
+        .school {
+            width: 32px;
+            height: 140px;
+            background: url('../images/school-xian.png')no-repeat;
+            position: relative;
+            right: -1550px;
+            top: -600px;
+        }
+    
+        /* 右下角小电视 */
+        .tv {
+            width: 241px;
+            height: 139px;
+            background: url('../images/cover_xiaoDS.png');
+            position: relative;
+            right: -1600px;
+            top: -740px;
+    
+            .ds-bg {
+                width: 100%;
+                height: 100%;
+                background: url('../images/cover_DS-bg.jpg')no-repeat center center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                /* 小电视暂停图标 */
+                .zanting {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45px;
+                    height: 57px;
+    
+                    a {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            animation: zoomIn 1s infinite alternate;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+    
+    }
+    
+    
+    
+    
+    /* 人物前面滑动按钮 */
+    .hua {
+        width: 305px;
+        height: 119px;
+        background-color: #0ff;
+        position: absolute;
+        top: 500px;
+        left: 700px;
+        z-index: 9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: url('../images/drag-bg_lianjiexian.png');
+    
+        .huadong {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            z-index: 2;
+            background-color: pink;
+            background: url('../images/drag-btn_huadong.png')no-repeat;
+            background-size: 100%;
+            animation: zoomIn 1s infinite alternate     ;
+        }
+    
+        .quan {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            // overflow: hidden;
+            z-index: 1;
+            right: 0;
+            // top: 200px;$('.huadong')
+            background-color: pink;
+            background: url('../images/drag-video-quan.png')no-repeat;
+            background-size: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .ship {
+                overflow: hidden;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+                video {
+                    width: 100px;
+                    height: 100px;
+                    // border-radius: 50%;
+                }
+            }
+        }
+    }
+    
+    /* 底部部分 */
+    .footer {
+        position: relative;
+        // bottom: 0;
+        width: 100%;
+        height: 73px;
+    
+        // background-color: rgba(0,255,255,.3);
+        .footer-inner {
+            width: 1135px;
+            height: 48px;
+            margin: 0 auto;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            // background-color: rgba(255,20,147,.3);
+            display: flex;
+    
+            /* 底部左边图标 */
+            .inner-logo {
+                height: 100%;
+                width: 459px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                a {
+                    display: inline-block;
+                }
+    
+                a:nth-child(1) {
+                    width: 118px;
+                    height: 36px;
+                }
+    
+                a:nth-child(2) {
+                    width: 149px;
+                    height: 36px;
+                }
+    
+                a:nth-child(3) {
+                    width: 55px;
+                    height: 40px;
+                }
+    
+                a:nth-child(4) {
+                    width: 45px;
+                    height: 36px;
+                }
+    
+                a:nth-child(5) {
+                    width: 46px;
+                    height: 36px;
+                }
+    
+                a:nth-child(6) {
+                    width: 46px;
+                    height: 40px;
+                }
+    
+                // background-color: green;
+            }
+    
+            /* 底部右边文字 */
+            .inner-text {
+                height: 100%;
+                width: 500px;
+                margin-left: 80px;
+    
+                .add {
+                    cursor: pointer;
+                    // background-color: deeppink;
+                }
+    
+                span {
+                    display: block;
+                    margin-top: 10px;
+                    line-height: 20px;
+                    width: 450px;
+                    margin-left: 10px;
+    
+                    #dianji {
+                        float: right;
+                        display: inline-block;
+                        width: 133px;
+                        height: 20px;
+                        margin-top: 2px;
+                        line-height: 20px;
+                        background-color: #5c0000;
+                        color: #fff;
+                        // cursor: pointer;
+                    }
+    
+                    #dianji:hover i {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+.box:nth-child(2) {
+    .main {
+        width: 1903px;
+        height: 1080px;
+        background: url('../images/bg_xuehe.jpg');
+        overflow: hidden;
+        position: relative;
+    
+        .bg {
+            position: relative;
+            width: 100px;
+            height: 100px;
+    
+            #woman {
+                width: 1400px;
+                position: absolute;
+                left: -80px;
+                top: 50px;
+            }
+    
+            #man {
+                width: 1400px;
+                position: absolute;
+                left: -80px;
+                top: 50px;
+            }
+    
+            /* 侧栏部分 */
+            .celan {
+                width: 112px;
+                height: 800px;
+                // background-color: #0ff;
+                position: absolute;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                top: 50px;
+                left: 10px;
+                display: flex;
+    
+                /* logobu部分 */
+                .logo {
+                    width: 78px;
+                    height: 209px;
+                    background: url('../images/logo_28d0be6.png') no-repeat;
+                    background-size: 100%;
+                }
+    
+                /* 分享部分 */
+                .fenxiang {
+                    width: 32px;
+                    height: 75px;
+                    // background-color: pink;
+    
+                    .btn-list {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+    
+                        .fen-btn {
+                            display: flex;
+                            width: 32px;
+                            height: 32px;
+                            // background-color: red;
+                            background: url('../images/index-icon-fenxiang.png') no-repeat;
+    
+                        }
+    
+                        .fen-btn:nth-child(2) {
+                            background-position-y: -42px;
+                            position: relative;
+    
+                            #weixin {
+                                width: 140px;
+                                height: 32px;
+                                position: absolute;
+                                // top: 100px;
+                                left: 50px;
+                                // background-color: rgba(0, 255, 255, .3);
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+    
+                                li {
+                                    width: 34px;
+                                    height: 34px;
+                                    // background-color: pink;
+                                    background: url('../images/share_weixin.png')no-repeat;
+                                    background-size: 156px 71px;
+    
+                                    a {
+                                        display: flex;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .huan {
+                                    width: 34px;
+                                    height: 34px;
+                                    // background-color: pink;
+                                    background: url('../images/share-weixin1.png')no-repeat;
+                                background-size: 156px 34px;
+                                }
+                                li:nth-child(2) {
+                                    background-position-x: -43px;
+                                }
+                                li:nth-child(3) {
+                                    background-position-x: -82px;
+                                }
+                                li:nth-child(4) {
+                                    background-position-x: -124px;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+    
+                /* 职业选择部分 */
+                .nav {
+                    width: 60px;
+                    height: 500px;
+                    // background-color: green;
+    
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        .yidong {
+                            background-position-x: -70px;
+                        }
+    
+                        .xuan {
+                            background-position-x: -70px;
+                        }
+    
+                        li {
+                            width: 60px;
+                            height: 70px;
+                            // background-color: pink;
+                            background: url('../images/nav_zhiye.png')no-repeat;
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+    
+    
+                        li:nth-child(2) {
+                            background-position-y: -74px;
+                        }
+    
+                        li:nth-child(3) {
+                            background-position-y: -148px;
+                        }
+    
+                        li:nth-child(4) {
+                            background-position-y: -222px;
+                        }
+    
+                        li:nth-child(5) {
+                            background-position-y: -296px;
+                        }
+    
+                        li:nth-child(6) {
+                            background-position-y: -370px;
+                        }
+    
+                        li:nth-child(7) {
+                            background-position-y: -442px;
+                        }
+    
+                    }
+                }
+            }
+        }
+    
+        .name {
+            position: relative;
+            right: -1400px;
+            top: -80px;
+            width: 312px;
+            height: 473px;
+            background: url('../images/name_xuehe.png')no-repeat;
+            background-size: 100%;
+        }
+    
+    
+        .jineng {
+            position: relative;
+            right: -1580px;
+            top: -500px;
+            z-index: 2;
+            width: 275px;
+            height: 645px;
+            background: url('../images/ability_xuehe.png')no-repeat;
+        }
+    
+        .sex {
+            width: 55px;
+            height: 124px;
+            position: relative;
+            right: -1500px;
+            top: -650px;
+            
+        opacity: 0;
+    
+            // background: url('../images/')
+            // background-color: #0ff;
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+    
+                .sex-w {
+                    width: 55px;
+                    height: 62px;
+                    background-color: pink;
+                    background: url('../images/gender-sex.png')
+                }
+    
+                .sex-w:nth-child(2) {
+                    background-position-y: -62px;
+                }
+    
+                .xuan {
+                    width: 55px;
+                    height: 62px;
+                    background-color: pink;
+                    background: url('../images/gender-sex-2.png')
+                }
+    
+                .xuan:nth-child(2) {
+                    background-position-y: -62px;
+                }
+    
+                .dong {
+                    width: 55px;
+                    height: 62px;
+                    background-color: pink;
+                    background: url('../images/gender-sex-2.png')
+                }
+    
+                .dong:nth-child(2) {
+                    background-position-y: -62px;
+                }
+            }
+        }
+    
+        /* 宗门部分开始 */
+        .school {
+            width: 32px;
+            height: 140px;
+            background: url('../images/school_xuehe.png')no-repeat;
+            position: relative;
+            right: -1550px;
+            top: -600px;
+        }
+    
+        /* 右下角小电视 */
+        .tv {
+            width: 241px;
+            height: 139px;
+            background: url('../images/cover_xiaoDS.png');
+            position: relative;
+            right: -1600px;
+            top: -740px;
+    
+            .ds-bg {
+                width: 100%;
+                height: 100%;
+                background: url('../images/cover_xuehe.jpg')no-repeat center center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                /* 小电视暂停图标 */
+                .zanting {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45px;
+                    height: 57px;
+    
+                    a {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            animation: zoomIn 1s infinite alternate;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+    
+    }
+    
+   
+    
+    
+    /* 人物前面滑动按钮 */
+    .hua {
+        width: 305px;
+        height: 119px;
+        background-color: #0ff;
+        position: absolute;
+        top: 500px;
+        left: 700px;
+        z-index: 9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: url('../images/drag-bg_lianjiexian.png');
+    
+        .huadong {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            z-index: 2;
+            background-color: pink;
+            background: url('../images/drag-btn_huadong.png')no-repeat;
+            background-size: 100%;
+            animation: zoomIn 1s infinite alternate;
+        }
+    
+        .quan {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            // overflow: hidden;
+            z-index: 1;
+            right: 0;
+            // top: 200px;$('.huadong')
+            background-color: pink;
+            background: url('../images/drag-video-quan.png')no-repeat;
+            background-size: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .ship {
+                overflow: hidden;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+                video {
+                    width: 100px;
+                    height: 100px;
+                    // border-radius: 50%;
+                }
+            }
+        }
+    }
+    
+    /* 底部部分 */
+    .footer {
+        position: relative;
+        // bottom: 0;
+        width: 100%;
+        height: 73px;
+    
+        // background-color: rgba(0,255,255,.3);
+        .footer-inner {
+            width: 1135px;
+            height: 48px;
+            margin: 0 auto;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            // background-color: rgba(255,20,147,.3);
+            display: flex;
+    
+            /* 底部左边图标 */
+            .inner-logo {
+                height: 100%;
+                width: 459px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                a {
+                    display: inline-block;
+                }
+    
+                a:nth-child(1) {
+                    width: 118px;
+                    height: 36px;
+                }
+    
+                a:nth-child(2) {
+                    width: 149px;
+                    height: 36px;
+                }
+    
+                a:nth-child(3) {
+                    width: 55px;
+                    height: 40px;
+                }
+    
+                a:nth-child(4) {
+                    width: 45px;
+                    height: 36px;
+                }
+    
+                a:nth-child(5) {
+                    width: 46px;
+                    height: 36px;
+                }
+    
+                a:nth-child(6) {
+                    width: 46px;
+                    height: 40px;
+                }
+    
+                // background-color: green;
+            }
+    
+            /* 底部右边文字 */
+            .inner-text {
+                height: 100%;
+                width: 500px;
+                margin-left: 80px;
+    
+                // display: flex;
+                .add {
+                    cursor: pointer;
+                    // background-color: deeppink;
+                }
+    
+                span {
+                    display: block;
+                    margin-top: 10px;
+                    line-height: 20px;
+                    width: 450px;
+                    margin-left: 10px;
+    
+                    #dianji {
+                        float: right;
+                        display: inline-block;
+                        width: 133px;
+                        height: 20px;
+                        margin-top: 2px;
+                        line-height: 20px;
+                        background-color: #5c0000;
+                        color: #fff;
+                        // cursor: pointer;
+                    }
+    
+                    #dianji:hover i {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+.box:nth-child(3) {
+    .main {
+        width: 1903px;
+        height: 1080px;
+        background: url('../images/bg_suwen.jpg');
+        overflow: hidden;
+        position: relative;
+    
+        .bg {
+            position: relative;
+            width: 100px;
+            height: 100px;
+    
+            #woman {
+                width: 1400px;
+                position: absolute;
+                left: -80px;
+                top: 50px;
+            }
+    
+            #man {
+                width: 1400px;
+                position: absolute;
+                left: -80px;
+                top: 50px;
+            }
+    
+            /* 侧栏部分 */
+            .celan {
+                width: 112px;
+                height: 800px;
+                // background-color: #0ff;
+                position: absolute;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                top: 50px;
+                left: 10px;
+                display: flex;
+    
+                /* logobu部分 */
+                .logo {
+                    width: 78px;
+                    height: 209px;
+                    background: url('../images/logo_28d0be6.png') no-repeat;
+                    background-size: 100%;
+                }
+    
+                /* 分享部分 */
+                .fenxiang {
+                    width: 32px;
+                    height: 75px;
+                    // background-color: pink;
+    
+                    .btn-list {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+    
+                        .fen-btn {
+                            display: flex;
+                            width: 32px;
+                            height: 32px;
+                            // background-color: red;
+                            background: url('../images/index-icon-fenxiang.png') no-repeat;
+    
+                        }
+    
+                        .fen-btn:nth-child(2) {
+                            background-position-y: -42px;
+                            position: relative;
+    
+                            #weixin {
+                                width: 140px;
+                                height: 32px;
+                                position: absolute;
+                                // top: 100px;
+                                left: 50px;
+                                // background-color: rgba(0, 255, 255, .3);
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+    
+                                li {
+                                    width: 34px;
+                                    height: 34px;
+                                    // background-color: pink;
+                                    background: url('../images/share_weixin.png')no-repeat;
+                                    background-size: 156px 71px;
+    
+                                    a {
+                                        display: flex;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .huan {
+                                    width: 34px;
+                                    height: 34px;
+                                    // background-color: pink;
+                                    background: url('../images/share-weixin1.png')no-repeat;
+                                background-size: 156px 34px;
+                                }
+                                li:nth-child(2) {
+                                    background-position-x: -43px;
+                                }
+                                li:nth-child(3) {
+                                    background-position-x: -82px;
+                                }
+                                li:nth-child(4) {
+                                    background-position-x: -124px;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+    
+                /* 职业选择部分 */
+                .nav {
+                    width: 60px;
+                    height: 500px;
+                    // background-color: green;
+    
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        .yidong {
+                            background-position-x: -70px;
+                        }
+    
+                        .xuan {
+                            background-position-x: -70px;
+                        }
+    
+                        li {
+                            width: 60px;
+                            height: 70px;
+                            // background-color: pink;
+                            background: url('../images/nav_zhiye.png')no-repeat;
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+    
+    
+                        li:nth-child(2) {
+                            background-position-y: -74px;
+                        }
+    
+                        li:nth-child(3) {
+                            background-position-y: -148px;
+                        }
+    
+                        li:nth-child(4) {
+                            background-position-y: -222px;
+                        }
+    
+                        li:nth-child(5) {
+                            background-position-y: -296px;
+                        }
+    
+                        li:nth-child(6) {
+                            background-position-y: -370px;
+                        }
+    
+                        li:nth-child(7) {
+                            background-position-y: -442px;
+                        }
+    
+                    }
+                }
+            }
+        }
+    
+        .name {
+            position: relative;
+            right: -1400px;
+            top: -80px;
+            width: 312px;
+            height: 473px;
+            background: url('../images/name_suwen.png')no-repeat;
+        }
+    
+    
+        .jineng {
+            position: relative;
+            right: -1580px;
+            top: -500px;
+            z-index: 2;
+            width: 275px;
+            height: 645px;
+            background: url('../images/ability_suwen.png')no-repeat;
+        }
+    
+        .sex {
+            width: 55px;
+            height: 124px;
+            position: relative;
+            right: -1500px;
+            top: -650px;
+            
+        opacity: 0;
+    
+            // background: url('../images/')
+            // background-color: #0ff;
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+    
+                .sex-w {
+                    width: 55px;
+                    height: 62px;
+                    background-color: pink;
+                    background: url('../images/gender-sex.png')
+                }
+    
+                .sex-w:nth-child(2) {
+                    background-position-y: -62px;
+                }
+    
+                .xuan {
+                    width: 55px;
+                    height: 62px;
+                    background-color: pink;
+                    background: url('../images/gender-sex-2.png')
+                }
+    
+                .xuan:nth-child(2) {
+                    background-position-y: -62px;
+                }
+    
+                .dong {
+                    width: 55px;
+                    height: 62px;
+                    background-color: pink;
+                    background: url('../images/gender-sex-2.png')
+                }
+    
+                .dong:nth-child(2) {
+                    background-position-y: -62px;
+                }
+            }
+        }
+    
+        /* 宗门部分开始 */
+        .school {
+            width: 32px;
+            height: 140px;
+            background: url('../images/school_suwen.png')no-repeat;
+            position: relative;
+            right: -1550px;
+            top: -600px;
+        }
+    
+        /* 右下角小电视 */
+        .tv {
+            width: 241px;
+            height: 139px;
+            background: url('../images/cover_xiaoDS.png');
+            position: relative;
+            right: -1600px;
+            top: -740px;
+    
+            .ds-bg {
+                width: 100%;
+                height: 100%;
+                background: url('../images/cover_suwen.jpg')no-repeat center center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                /* 小电视暂停图标 */
+                .zanting {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45px;
+                    height: 57px;
+    
+                    a {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            animation: zoomIn 1s infinite alternate;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+    
+    }
+    
+    
+    
+    
+    /* 人物前面滑动按钮 */
+    .hua {
+        width: 305px;
+        height: 119px;
+        background-color: #0ff;
+        position: absolute;
+        top: 500px;
+        left: 700px;
+        z-index: 9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: url('../images/drag-bg_lianjiexian.png');
+    
+        .huadong {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            z-index: 2;
+            background-color: pink;
+            background: url('../images/drag-btn_huadong.png')no-repeat;
+            background-size: 100%;
+            animation: zoomIn 1s infinite alternate;
+        }
+    
+        .quan {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            // overflow: hidden;
+            z-index: 1;
+            right: 0;
+            // top: 200px;$('.huadong')
+            background-color: pink;
+            background: url('../images/drag-video-quan.png')no-repeat;
+            background-size: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .ship {
+                overflow: hidden;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+                video {
+                    width: 100px;
+                    height: 100px;
+                    // border-radius: 50%;
+                }
+            }
+        }
+    }
+    
+    /* 底部部分 */
+    .footer {
+        position: relative;
+        // bottom: 0;
+        width: 100%;
+        height: 73px;
+    
+        // background-color: rgba(0,255,255,.3);
+        .footer-inner {
+            width: 1135px;
+            height: 48px;
+            margin: 0 auto;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            // background-color: rgba(255,20,147,.3);
+            display: flex;
+    
+            /* 底部左边图标 */
+            .inner-logo {
+                height: 100%;
+                width: 459px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                a {
+                    display: inline-block;
+                }
+    
+                a:nth-child(1) {
+                    width: 118px;
+                    height: 36px;
+                }
+    
+                a:nth-child(2) {
+                    width: 149px;
+                    height: 36px;
+                }
+    
+                a:nth-child(3) {
+                    width: 55px;
+                    height: 40px;
+                }
+    
+                a:nth-child(4) {
+                    width: 45px;
+                    height: 36px;
+                }
+    
+                a:nth-child(5) {
+                    width: 46px;
+                    height: 36px;
+                }
+    
+                a:nth-child(6) {
+                    width: 46px;
+                    height: 40px;
+                }
+    
+                // background-color: green;
+            }
+    
+            /* 底部右边文字 */
+            .inner-text {
+                height: 100%;
+                width: 500px;
+                margin-left: 80px;
+    
+                // display: flex;
+                .add {
+                    cursor: pointer;
+                    // background-color: deeppink;
+                }
+    
+                span {
+                    display: block;
+                    margin-top: 10px;
+                    line-height: 20px;
+                    width: 450px;
+                    margin-left: 10px;
+    
+                    #dianji {
+                        float: right;
+                        display: inline-block;
+                        width: 133px;
+                        height: 20px;
+                        margin-top: 2px;
+                        line-height: 20px;
+                        background-color: #5c0000;
+                        color: #fff;
+                        // cursor: pointer;
+                    }
+    
+                    #dianji:hover i {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1)
+    }
+
+
+    100% {
+        transform: scale(1.3)
+    }
+}

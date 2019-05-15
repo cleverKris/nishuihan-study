@@ -1,0 +1,732 @@
+@import "base";
+
+body {
+    font: 12px/100% "微软雅黑";
+    background: url('../images/bigbg.webp') no-repeat 50% 1080px;
+    height: 1000px;
+
+    //拔剑
+    #loading {
+        position: absolute;
+        left: 50%;
+        margin-left: -960px;
+        top: 0;
+        z-index: 999;
+        background: url('../images/startbajian.jpg') no-repeat;
+        width: 1920px;
+        height: 1000px;
+        overflow: hidden;
+
+        video {
+            pointer-events: none;
+
+            &.bgv {
+                pointer-events: none;
+            }
+        }
+
+        .circle {
+            position: absolute;
+            width: 640px;
+            height: 580px;
+            left: 50%;
+            top: 50%;
+            margin-left: -320px;
+            margin-top: -400px;
+            color: #385071;
+            font-size: 24px;
+
+            .progress {
+                position: absolute;
+                width: 100%;
+                height: 40px;
+                top: 200px;
+                left: 0;
+                color: #fff;
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+
+        @keyframes loading {
+            0% {
+                background-position-y: 0;
+            }
+            100% {
+                background-position-y: bottom;
+            }
+        }
+    }
+
+    //拔剑出鞘
+    #loading-in {
+        display: none;
+    }
+
+    //拔剑后的大盒子
+    .boss {
+        display: none;
+        //头部
+        #header {
+            position: relative;
+            height: 820px;
+            //视频和音乐的盒子
+            .video-box {
+                position: absolute;
+            }
+
+            //进入官网的按钮
+            .enter {
+                position: absolute;
+                width: 176px;
+                height: 42px;
+                background: url("../images/spirit_index.png") no-repeat -710px -951px;
+                right: 250px;
+                top: 0;
+                z-index: 1;
+
+                &:hover {
+                    background-position: -534px -951px;
+                }
+            }
+
+            //新流派龙吟
+            .intro {
+                width: 231px;
+                height: 233px;
+                position: absolute;
+                z-index: 1;
+                background: url("../images/intro.png") no-repeat;
+                right: 280px;
+                top: 125px;
+            }
+
+            //logo
+            .logo {
+                width: 104px;
+                height: 337px;
+                z-index: 1;
+                position: absolute;
+                text-indent: -999em;
+                background: url("../images/logo.png") no-repeat;
+                left: 250px;
+                top: 45px;
+
+                a {
+                    width: 107px;
+                    height: 205px;
+                    display: block;
+                    margin-top: -25px;
+                }
+            }
+        }
+
+        //链接区块
+        #section {
+            height: 391px;
+            background: url('../images/section.webp') no-repeat;
+            position: relative;
+            //领取江湖成长豪礼按钮
+            .getGift {
+                width: 267px;
+                height: 49px;
+                position: absolute;
+                right: 335px;
+                bottom: 25px;
+                background: url("../images/spirit_index.png") no-repeat -717px -867px;
+
+                &:hover {
+                    background-position: -450px -867px;
+                }
+            }
+
+            //极速下载按钮
+            .fastDown {
+                width: 267px;
+                height: 49px;
+                position: absolute;
+                bottom: 25px;
+                right: 835px;
+                background: url("../images/spirit_index.png") no-repeat -267px -951px;
+
+                &:hover {
+                    background-position: 0 -951px;
+                }
+            }
+
+            //极速下载的内容盒子
+            .fastDown-content {
+                width: 266px;
+                height: 240px;
+                position: absolute;
+                top: 75px;
+                left: 815px;
+                //寒 logo
+                .cold {
+                    display: block;
+                    width: 107px;
+                    height: 107px;
+                    margin: 50px auto;
+                    background: url('../images/cold.png') no-repeat;
+                }
+
+                //两条雷达线
+                .loop-c1 {
+                    left: 58px;
+                    top: 29px;
+                    position: absolute;
+                    width: 150px;
+                    height: 150px;
+                    background: url("../images/loopc1.png") no-repeat;
+                    animation: waveOut_1 1.3s ease-out infinite both;
+                }
+
+                .loop-c2 {
+                    left: 68px;
+                    top: 40px;
+                    position: absolute;
+                    width: 130px;
+                    height: 130px;
+                    background: url("../images/loopc2.png") no-repeat;
+                    animation: waveOut_2 1.3s ease-out .3s infinite both;
+                }
+
+                //定义动画
+                @keyframes waveOut_1 {
+                    0% {
+                        opacity: 1;
+                        transform: scale(0.6);
+                    }
+                    75%, 100% {
+                        opacity: 0;
+                        transform: scale(1.4);
+                    }
+                }
+                @keyframes waveOut_2 {
+                    0% {
+                        opacity: 1;
+                        transform: scale(0.6);
+                    }
+                    75%, 100% {
+                        opacity: 0;
+                        transform: scale(1.8);
+                    }
+                }
+            }
+
+
+            //快速注册内容盒子
+            .fast-register {
+                width: 330px;
+                height: 300px;
+                position: absolute;
+                top: 70px;
+                left: 370px;
+                padding-left: 10px;
+                box-sizing: border-box;
+
+                input {
+                    width: 266px;
+                    height: 38px;
+                    background-color: #f5f8ff;
+                    padding: 0 5px;
+                    border: 1px solid #62a1c9;
+                    margin-top: 10px;
+                }
+
+                .register {
+                    width: 267px;
+                    height: 49px;
+                    display: block;
+                    background: url("../images/registerbtn.png") no-repeat;
+                    margin: 5px 0 5px 5px;
+
+                    &:hover {
+                        background-position: 0 -50px;
+                    }
+                }
+
+                p {
+                    padding-top: 20px;
+                    width: 264px;
+                    height: 84px;
+                    color: #fff;
+
+                    a {
+                        color: #fff;
+
+                        &:hover {
+                            color: #666;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        //轮播图1
+        #slideBox {
+            width: 1920px;
+            height: 763px;
+            background: url("../images/slidebg.png") no-repeat;
+            position: relative;
+            margin-top: 100px;
+            //轮播图盒子
+            #slideShow {
+                width: 1753px;
+                height: 701px;
+                position: absolute;
+                right: -17px;
+
+                li {
+
+                    position: absolute;
+                    display: none;
+
+                    &:first-of-type {
+                        display: block;
+                    }
+
+
+                }
+            }
+
+            //轮播导航
+            #slideNav {
+                position: absolute;
+                background: url("../images/nav1.png") no-repeat;
+                z-index: 1;
+                width: 260px;
+                height: 554px;
+                right: 288px;
+                top: -70px;
+                padding: 154px 0 0 34px;
+                box-sizing: border-box;
+
+                li {
+                    width: 35px;
+                    height: 190px;
+                    cursor: pointer;
+                    background: url("../images/nav2.png") no-repeat;
+                    float: left;
+                    margin-right: 18px;
+
+                    &.active {
+                        background-color: #62a1c9 !important;
+                    }
+
+                    &:first-of-type {
+                        background-position: 0 -187px;
+                    }
+
+                    &:nth-of-type(2) {
+                        background-position: -54px -187px;
+                    }
+
+                    &:nth-of-type(3) {
+                        background-position: -107px -187px;
+                    }
+
+                    &:last-of-type {
+                        background-position: -161px -187px;
+                    }
+                }
+            }
+
+        }
+
+        //轮播图2:职业介绍
+        #dynamic {
+            height: 695px;
+            background: url("../images/dynamicbg.png") no-repeat center bottom;
+            position: relative;
+            margin-top: 100px;
+            //轮播导航
+            .dynamicNav {
+                position: absolute;
+                right: 350px;
+                top: 45px;
+                z-index: 999;
+
+                a {
+                    width: 104px;
+                    height: 24px;
+                    background-color: red;
+                    margin-bottom: 10px;
+                    display: block;
+                    background: url("../images/navsprite.png") no-repeat;
+
+
+                    &#nav-ly {
+                        width: 131px;
+                        height: 25px;
+                        background: url("../images/navly.png") no-repeat;
+                    }
+
+                    &#nav-xh {
+                        background-position: 0 -600px;
+                    }
+
+                    &#nav-sw {
+                        background-position: 0 -635px;
+                    }
+
+                    //&#nav-jl {
+                    //    background-position: 0 -672px;
+                    //}
+                    //
+                    //&#nav-sm {
+                    //    background-position: 0 -708px;
+                    //}
+                    //
+                    //&#nav-sx {
+                    //    background-position: 0 -744px;
+                    //}
+                    //
+                    //&#nav-ty {
+                    //    background-position: 0 -781px;
+                    //}
+
+                    &.active {
+                        background-color: #62a1c9 !important;
+                    }
+
+                }
+            }
+
+            //轮播主体
+            .dynamic-body {
+                perspective: 1000px;
+                //定义大名的动画
+                @keyframes boomIn {
+                    0% {
+                        opacity: 0;
+                        transform: translate3d(0, 0, 200px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+                //定义头像的动画
+                @keyframes pulse {
+                    0% {
+                        transform: scale(0.9);
+                    }
+                    100% {
+                        transform: scale(1.05);
+                    }
+                }
+                //定义擅长武器的动画
+                @keyframes slideDown {
+                    0% {
+                        opacity: 0;
+                        transform: translate3d(0, -100px, 0);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+                //定义属性图的动画
+                @keyframes slideUpIn {
+                    0% {
+                        opacity: 0;
+                        transform: translate3d(0, 100px, 0);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+
+                //龙吟
+                .ly-body {
+                    width: 100%;
+                    height: 763px;
+                    position: absolute;
+                    //视频
+                    video {
+                        width: 1013px;
+                        height: 590px;
+                        position: absolute;
+                    }
+
+                    //人物
+                    .per {
+                        position: absolute;
+                        top: -83px;
+                    }
+
+                    //属性介绍
+                    .attr-pro {
+                        width: 260px;
+                        height: 632px;
+                        position: absolute;
+                        top: 0;
+                        left: 472px;
+                        background: url("../images/attrbgpic.png") no-repeat;
+                        //上方的头像
+                        .attr-square {
+                            margin: 0 auto;
+                            width: 150px;
+                            height: 81px;
+                            background: url('../images/spirit_index.png') no-repeat -471px -766px;
+                            animation: pulse 1s ease-out infinite alternate;
+                        }
+
+                        //擅长武器
+                        .weapon {
+                            width: 118px;
+                            height: 101px;
+                            background: url('../images/spirit_index.png') no-repeat -704px -469px;
+                            margin: 20px auto 0;
+                            animation: slideDown .3s .5s ease both;
+                        }
+
+                        //属性图
+                        .attrPic {
+                            width: 197px;
+                            height: 187px;
+                            background: url("../images/spirit_index.png") no-repeat -394px -579px;
+                            margin: 20px auto 0;
+                            animation: slideUpIn .3s .8s ease both;
+                        }
+
+                        //大名
+                        .bigName {
+                            position: absolute;
+                            width: 234px;
+                            height: 290px;
+                            background: url("../images/spirit_index.png") no-repeat 0 -290px;
+                            right: -680px;
+                            top: 0;
+                            animation: boomIn .2s 1s ease both;
+                        }
+                    }
+                }
+
+                //血河
+                .xh-body {
+                    width: 100%;
+                    height: 763px;
+                    position: absolute;
+                    display: none;
+                    //视频
+                    video {
+                        width: 1013px;
+                        height: 590px;
+                        position: absolute;
+                    }
+
+                    //人物
+                    .per {
+                        position: absolute;
+                        top: -83px;
+                    }
+
+                    //属性介绍
+                    .attr-pro {
+                        width: 260px;
+                        height: 632px;
+                        position: absolute;
+                        top: 0;
+                        left: 472px;
+                        background: url("../images/attrbgpic.png") no-repeat;
+                        //上方的头像
+                        .attr-square {
+                            margin: 0 auto;
+                            width: 150px;
+                            height: 81px;
+                            background: url('../images/spirit_index.png') no-repeat 0px -869px;
+                            animation: pulse 1s ease-out infinite alternate;
+                        }
+
+                        //擅长武器
+                        .weapon {
+                            width: 118px;
+                            height: 101px;
+                            background: url('../images/spirit_index.png') no-repeat -235px -766px;
+                            margin: 20px auto 0;
+                            animation: slideDown .3s .5s ease both;
+                        }
+
+                        //属性图
+                        .attrPic {
+                            width: 197px;
+                            height: 187px;
+                            background: url("../images/spirit_index.png") no-repeat -197px -579px;
+                            margin: 20px auto 0;
+                            animation: slideUpIn .3s .8s ease both;
+                        }
+
+                        //大名
+                        .bigName {
+                            position: absolute;
+                            width: 234px;
+                            height: 290px;
+                            background: url("../images/spirit_index.png") no-repeat -704px 0;
+                            right: -680px;
+                            top: 0;
+                            animation: boomIn .2s 1s ease both;
+                        }
+                    }
+                }
+
+                //素问
+                .sw-body {
+                    width: 100%;
+                    height: 763px;
+                    position: absolute;
+                    display: none;
+
+                    //视频
+                    video {
+                        width: 1013px;
+                        height: 590px;
+                        position: absolute;
+                    }
+
+                    //人物
+                    .per {
+                        position: absolute;
+                        top: -83px;
+                    }
+
+                    //属性介绍
+                    .attr-pro {
+                        width: 260px;
+                        height: 632px;
+                        position: absolute;
+                        top: 0;
+                        left: 472px;
+                        background: url("../images/attrbgpic.png") no-repeat;
+                        //上方的头像
+                        .attr-square {
+                            margin: 0 auto;
+                            width: 150px;
+                            height: 81px;
+                            background: url('../images/spirit_index.png') no-repeat -921px -767px;
+                            animation: pulse 1s ease-out infinite alternate;
+                        }
+
+                        //擅长武器
+                        .weapon {
+                            width: 118px;
+                            height: 101px;
+                            background: url('../images/spirit_index.png') no-repeat -118px -766px;
+                            margin: 20px auto 0;
+                            animation: slideDown .3s .5s ease both;
+                        }
+
+                        //属性图
+                        .attrPic {
+                            width: 197px;
+                            height: 187px;
+                            background: url("../images/spirit_index.png") no-repeat -704px -282px;
+                            margin: 20px auto 0;
+                            animation: slideUpIn .3s .8s ease both;
+                        }
+
+                        //大名
+                        .bigName {
+                            position: absolute;
+                            width: 234px;
+                            height: 290px;
+                            background: url("../images/spirit_index.png") no-repeat -466px -290px;
+                            right: -680px;
+                            top: 0;
+                            animation: boomIn .2s 1s ease both;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        //底部
+        #footer {
+            padding-top: 100px;
+            //友情链接
+            .friendLink {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px;
+
+                span {
+                    color: #7e869b;
+                }
+
+                ul {
+                    padding-left: 10px;
+
+                    li {
+                        float: left;
+
+
+                        a {
+                            display: block;
+                            width: 36px;
+                            height: 36px;
+                            line-height: 36px;
+                            font-size: 36px;
+                            color: #7e869b;
+                            margin-right: 10px;
+
+                            &:hover {
+                                color: #c0ab6f;
+                            }
+                        }
+                    }
+                }
+            }
+
+            //底部信息
+            .footerMessage {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .footer-logo {
+                    float: left;
+
+                    a {
+                        padding: 5px;
+                    }
+                }
+
+                .footer-nav {
+
+                    a {
+                        line-height: 30px;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .footer-nav-in {
+                        a {
+                            float: right;
+                            background-color: #610000;
+                            height: 26px;
+                            line-height: 26px;
+                            color: #fff;
+                            padding: 2px 2px;
+                        }
+                    }
+
+                }
+            }
+
+            p {
+                text-align: center;
+                line-height: 30px;
+            }
+        }
+    }
+
+}
+

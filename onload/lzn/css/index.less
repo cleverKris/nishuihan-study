@@ -1,0 +1,962 @@
+@import './base.less';
+
+body {
+    background-image: url(../images/pc_bck.jpg);
+
+    // 头部样式
+    .head {
+        .navs {
+            overflow: hidden;
+
+            a {
+                display: block;
+                float: right;
+                margin: 10px;
+            }
+        }
+    }
+
+    //  中心样式
+    .main {
+        .wrap {
+            margin-top: 500px;
+
+            // 出入江湖
+            .content1 {
+                height: 335px;
+                display: inline-block;
+                // text-align: left;
+                position: relative;
+                margin-bottom: 10px;
+
+                .title {
+                    background: url(../images/title1.png) no-repeat;
+                    background-size: 100%;
+                    display: inline-block;
+                    width: 171px;
+                    height: 76px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .box1 {
+                    margin-top: 76px;
+
+                    a {
+                        float: left;
+                        margin-right: 9px;
+
+
+                        img {
+                            width: 236px;
+                            height: 261px;
+                            // position: relative;
+                            z-index: 1;
+                            transition: all 1s;
+                            // transform: rotateY(360deg);
+                        }
+
+                    }
+
+                    .mc::before {
+                        display: block;
+                        content: '';
+                        width: 236px;
+                        height: 261px;
+                        position: absolute;
+                        background-color: #000;
+                        opacity: 0.5;
+                        z-index: 999;
+                    }
+
+                    a:last-child {
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                        }
+
+                        .bg {
+                            display: none;
+                            width: 236px;
+                            height: 261px;
+                            position: absolute;
+                            z-index: 2;
+                            background-color: #000;
+                            opacity: 0.5;
+                        }
+
+                        .xs4-qrcode {
+                            display: none;
+                            width: 118px;
+                            height: 130px;
+                            position: absolute;
+                            z-index: 3;
+                            left: 59px;
+                            top: 65px;
+
+                        }
+
+                    }
+
+                }
+            }
+
+            //  流派介绍
+            .content2 {
+                height: 608px;
+                display: inline-block;
+                // text-align: left;
+                margin-bottom: 10px;
+                position: relative;
+
+                .title {
+                    background: url(../images/title2.png) no-repeat;
+                    background-size: 100%;
+                    display: inline-block;
+                    width: 171px;
+                    height: 76px;
+                    text-align: center;
+                    position: absolute;
+                    left: 0;
+                    margin-top: 20px;
+                }
+
+                .box2_left {
+                    width: 182px;
+                    height: 333px;
+                    position: absolute;
+                    z-index: 1000;
+                    top: 125.5px;
+
+                    div {
+                        margin: 10px 0;
+
+                        p {
+                            width: 182px;
+                            height: 48px;
+                            color: rgb(89, 109, 145);
+                            font-family: 微软雅黑;
+                            font-size: 24px;
+                            cursor: pointer;
+                            text-align: center;
+                            line-height: 48px;
+                            float: left;
+                        }
+
+                        .active {
+                            background: url(../images/p_bck.png) no-repeat;
+                            background-size: 100% 100%;
+                            width: 182px;
+                            height: 48px;
+                            color: #ffffff;
+                        }
+
+                    }
+
+                }
+
+                .box2 {
+                    position: absolute;
+                    top: 96px;
+
+                    // 碎梦
+                    .box2_sm {
+                        background: url(../images/sm_bck.png) no-repeat;
+                        background-size: 100% 100%;
+                        width: 1225px;
+                        height: 510px;
+                        display: block;
+                        overflow: hidden;
+
+                        .sm_zt {
+                            width: 1099px;
+                            height: 483px;
+                            position: relative;
+                            top: 27px;
+                            left: 50%;
+                            margin-left: -549.5px;
+
+                            .sm_r {
+                                background: url(../images/smr_bck.png) no-repeat;
+                                background-size: 100%;
+                                width: 438px;
+                                height: 483px;
+
+                            }
+
+                            .sm_jsa {
+                                width: 399px;
+                                height: 311px;
+                                text-align: left;
+                                position: absolute;
+                                left: 438px;
+                                top: 50%;
+                                margin-top: -155.5px;
+
+                                .ck {
+                                    background: url(../images/ck.png) no-repeat;
+                                    background-size: 100%;
+                                    width: 117px;
+                                    height: 59px;
+                                    margin-bottom: 50px;
+                                    margin-left: 20px;
+                                }
+
+                                .pa {
+
+                                    color: rgb(244, 228, 166);
+                                    font-size: 18px;
+                                    padding-bottom: 5px;
+                                    margin-bottom: 10px;
+                                    border-bottom: 1px solid rgb(244, 228, 166);
+
+                                }
+
+                                .pba {
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+
+                                }
+
+                                .pb {
+
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    margin-bottom: 10px;
+
+                                }
+
+                                div {
+                                    a {
+                                        float: left;
+                                        text-decoration: underline;
+                                        margin: 0 10px;
+
+                                        p {
+                                            width: 64px;
+                                            height: 18px;
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            color: #FFFFFF;
+                                            padding-bottom: 3px;
+                                            border-bottom: solid 1px #FFFFFF;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .sm_jsb {
+                                background: url(../images/smjs_bck.png) no-repeat;
+                                background-size: 100% 100%;
+                                width: 254px;
+                                height: 423px;
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                margin-top: -215.5px;
+                            }
+
+                        }
+                    }
+
+                    //血河
+                    .box2_xh {
+                        background: url(../images/xh_bck.png) no-repeat;
+                        background-size: 100% 100%;
+                        width: 1225px;
+                        height: 510px;
+                        display: none;
+                        overflow: hidden;
+
+                        .xh_zt {
+                            width: 1099px;
+                            height: 483px;
+                            position: relative;
+                            top: 27px;
+                            margin: 0 auto;
+
+                            .xh_r {
+                                background: url(../images/xhr_bck.png) no-repeat;
+                                background-size: 100%;
+                                width: 606px;
+                                height: 505px;
+                                position: absolute;
+                            }
+
+                            .xh_jsa {
+                                width: 400px;
+                                height: 311px;
+                                text-align: left;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-top: -97.5px;
+                                margin-left: -80px;
+
+                                .ck {
+                                    background: url(../images/zs.png) no-repeat;
+                                    background-size: 100%;
+                                    width: 117px;
+                                    height: 59px;
+                                    margin-bottom: 50px;
+                                    margin-left: 20px;
+                                }
+
+                                .pa {
+
+                                    color: rgb(244, 228, 166);
+                                    font-size: 18px;
+                                    padding-bottom: 5px;
+                                    margin-bottom: 10px;
+                                    border-bottom: 1px solid rgb(244, 228, 166);
+
+                                }
+
+                                .pba {
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+
+                                }
+
+                                .pb {
+
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    margin-bottom: 10px;
+
+                                }
+
+                                div {
+                                    a {
+                                        float: left;
+                                        text-decoration: underline;
+                                        margin: 0 10px;
+
+                                        p {
+                                            width: 64px;
+                                            height: 18px;
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            color: #FFFFFF;
+                                            padding-bottom: 3px;
+                                            border-bottom: solid 1px #FFFFFF;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .xh_jsb {
+                                background: url(../images/xhjs_bck.png) no-repeat;
+                                background-size: 100% 100%;
+                                width: 254px;
+                                height: 423px;
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                margin-top: -215.5px;
+                            }
+
+                        }
+                    }
+
+                    // 铁衣
+                    .box2_ty {
+                        background: url(../images/ty_bck.png) no-repeat;
+                        background-size: 100% 100%;
+                        width: 1225px;
+                        height: 510px;
+                        display: none;
+                        overflow: hidden;
+
+                        .ty_zt {
+                            width: 1099px;
+                            height: 483px;
+                            position: relative;
+                            top: 27px;
+                            margin: 0 auto;
+
+                            .ty_r {
+                                background: url(../images/tyr_bck.png) no-repeat;
+                                background-size: 100%;
+                                width: 343px;
+                                height: 482px;
+                                position: absolute;
+                                left: 103px;
+                            }
+
+                            .ty_jsa {
+                                width: 400px;
+                                height: 311px;
+                                text-align: left;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-top: -126.5px;
+                                margin-left: -115px;
+
+                                .ck {
+                                    background: url(../images/zs.png) no-repeat;
+                                    background-size: 100%;
+                                    width: 117px;
+                                    height: 59px;
+                                    margin-bottom: 50px;
+                                    margin-left: 20px;
+                                }
+
+                                .pa {
+                                    color: rgb(244, 228, 166);
+                                    font-size: 18px;
+                                    padding-bottom: 5px;
+                                    margin-bottom: 10px;
+                                    border-bottom: 1px solid rgb(244, 228, 166);
+
+                                }
+
+                                .pba {
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+
+                                }
+
+                                .pb {
+
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    margin-bottom: 10px;
+
+                                }
+
+                                div {
+                                    a {
+                                        float: left;
+                                        text-decoration: underline;
+                                        margin: 0 10px;
+
+                                        p {
+                                            width: 64px;
+                                            height: 18px;
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            color: #FFFFFF;
+                                            padding-bottom: 3px;
+                                            border-bottom: solid 1px #FFFFFF;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .ty_jsb {
+                                background: url(../images/tyjs_bck.png) no-repeat;
+                                background-size: 100% 100%;
+                                width: 277px;
+                                height: 435px;
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                margin-top: -217.5px;
+                            }
+
+                        }
+                    }
+
+                    //素问
+                    .box2_sw {
+                        background: url(../images/sw_bck.png) no-repeat;
+                        background-size: 100% 100%;
+                        width: 1225px;
+                        height: 510px;
+                        display: none;
+                        overflow: hidden;
+
+                        .sw_zt {
+                            width: 1225px;
+                            height: 483px;
+                            position: relative;
+                            top: 27px;
+
+
+                            .sw_r {
+                                background: url(../images/swr_bck.png) no-repeat;
+                                background-size: 100%;
+                                width: 461px;
+                                height: 482px;
+                                position: absolute;
+                                top: 14px;
+                                left: -7px;
+                            }
+
+                            .sw_jsa {
+                                width: 400px;
+                                height: 311px;
+                                text-align: left;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-top: -134.5px;
+                                margin-left: -144px;
+
+                                .ck {
+                                    background: url(../images/zl.png) no-repeat;
+                                    background-size: 100%;
+                                    width: 117px;
+                                    height: 59px;
+                                    margin-bottom: 50px;
+                                    margin-left: 20px;
+                                }
+
+                                .pa {
+                                    color: rgb(244, 228, 166);
+                                    font-size: 18px;
+                                    padding-bottom: 5px;
+                                    margin-bottom: 10px;
+                                    border-bottom: 1px solid rgb(244, 228, 166);
+
+                                }
+
+                                .pba {
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+
+                                }
+
+                                .pb {
+
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    margin-bottom: 10px;
+
+                                }
+
+                                div {
+                                    a {
+                                        float: left;
+                                        text-decoration: underline;
+                                        margin: 0 10px;
+
+                                        p {
+                                            width: 64px;
+                                            height: 18px;
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            color: #FFFFFF;
+                                            padding-bottom: 3px;
+                                            border-bottom: solid 1px #FFFFFF;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .sw_jsb {
+                                background: url(../images/swjs_bck.png) no-repeat;
+                                background-size: 100% 100%;
+                                width: 254px;
+                                height: 433px;
+                                position: absolute;
+                                right: 40px;
+                                top: 50%;
+                                margin-top: -216.5px;
+                            }
+                        }
+                    }
+
+                    //九灵
+                    .box2_jl {
+                        background: url(../images/jl_bck.png) no-repeat;
+                        background-size: 100% 100%;
+                        width: 1225px;
+                        height: 510px;
+                        display: none;
+                        overflow: hidden;
+
+                        .jl_zt {
+                            width: 1225px;
+                            height: 483px;
+                            position: relative;
+                            top: 27px;
+
+
+                            .jl_r {
+                                background: url(../images/jlr_bck.png) no-repeat;
+                                background-size: 100%;
+                                width: 644px;
+                                height: 862px;
+                                position: absolute;
+                                top: -12px;
+                                left: -29px;
+                            }
+
+                            .jl_jsa {
+                                width: 400px;
+                                height: 311px;
+                                text-align: left;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-top: -110.5px;
+                                margin-left: -30px;
+
+                                .ck {
+                                    background: url(../images/zh.png) no-repeat;
+                                    background-size: 100%;
+                                    width: 117px;
+                                    height: 59px;
+                                    margin-bottom: 50px;
+                                    margin-left: 20px;
+                                }
+
+                                .pa {
+                                    color: rgb(244, 228, 166);
+                                    font-size: 18px;
+                                    padding-bottom: 5px;
+                                    margin-bottom: 10px;
+                                    border-bottom: 1px solid rgb(244, 228, 166);
+
+                                }
+
+                                .pba {
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+
+                                }
+
+                                .pb {
+
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    margin-bottom: 10px;
+
+                                }
+
+                                div {
+                                    a {
+                                        float: left;
+                                        text-decoration: underline;
+                                        margin: 0 10px;
+
+                                        p {
+                                            width: 64px;
+                                            height: 18px;
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            color: #FFFFFF;
+                                            padding-bottom: 3px;
+                                            border-bottom: solid 1px #FFFFFF;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .jl_jsb {
+                                background: url(../images/jljs_bck.png) no-repeat;
+                                background-size: 100% 100%;
+                                width: 254px;
+                                height: 433px;
+                                position: absolute;
+                                right: 36px;
+                                top: 50%;
+                                margin-top: -211.5px;
+                            }
+                        }
+                    }
+
+                    //神相
+                    .box2_ss {
+                        background: url(../images/ss_bck.png) no-repeat;
+                        background-size: 100% 100%;
+                        width: 1225px;
+                        height: 510px;
+                        display: none;
+                        overflow: hidden;
+
+                        .ss_zt {
+                            width: 1225px;
+                            height: 483px;
+                            position: relative;
+                            top: 27px;
+
+
+                            .ss_r {
+                                background: url(../images/ssr_bck.png) no-repeat;
+                                background-size: 100%;
+                                width: 613px;
+                                height: 469px;
+                                position: absolute;
+                                bottom: 0;
+                            }
+
+                            .ss_jsa {
+                                width: 400px;
+                                height: 311px;
+                                text-align: left;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-top: -118.5px;
+                                margin-left: -56px;
+                                z-index: 5;
+
+                                .ck {
+                                    background: url(../images/ss.png) no-repeat;
+                                    background-size: 100%;
+                                    width: 117px;
+                                    height: 59px;
+                                    margin-bottom: 50px;
+                                    margin-left: 20px;
+                                }
+
+                                .pa {
+                                    color: rgb(244, 228, 166);
+                                    font-size: 18px;
+                                    padding-bottom: 5px;
+                                    margin-bottom: 10px;
+                                    border-bottom: 1px solid rgb(244, 228, 166);
+
+                                }
+
+                                .pba {
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+
+                                }
+
+                                .pb {
+
+                                    color: rgb(255, 255, 255);
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    margin-bottom: 10px;
+
+                                }
+
+                                div {
+                                    a {
+                                        float: left;
+                                        text-decoration: underline;
+                                        margin: 0 10px;
+
+                                        p {
+                                            width: 64px;
+                                            height: 18px;
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            color: #FFFFFF;
+                                            padding-bottom: 3px;
+                                            border-bottom: solid 1px #FFFFFF;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .ss_jsb {
+                                background: url(../images/ssjs_bck.png) no-repeat;
+                                background-size: 100% 100%;
+                                width: 713px;
+                                height: 433px;
+                                position: absolute;
+                                right: 71px;
+                                top: 50%;
+                                margin-top: -223.5px;
+                                z-index: 1;
+                            }
+                        }
+                    }
+                }
+
+                //二维码
+                .qrcode {
+                    width: 124px;
+                    height: 260px;
+                    position: absolute;
+                    right: -130px;
+                    top: 96px;
+
+                }
+            }
+
+            // 特色玩法
+            .content3 {
+                height: 633px;
+                display: inline-block;
+                text-align: left;
+
+                .title {
+                    background: url(../images/title3.png) no-repeat;
+                    background-size: 100%;
+                    display: inline-block;
+                    width: 171px;
+                    height: 71px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
+                .box3 {
+                    background: url(../images/box3_bck.jpg) no-repeat;
+                    background-size: 100%;
+                    display: inline-block;
+                    width: 1225px;
+                    height: 538px;
+                    position: relative;
+
+                    ul {
+                        li {
+                            float: left;
+                            width: 195px;
+                            height: 237px;
+                            margin: 27px 25px;
+
+                            a {
+                                position: relative;
+
+                                img {
+                                    position: absolute;
+                                }
+
+                                div {
+                                    position: absolute;
+                                    display: block;
+                                    width: 130px;
+                                    height: 130px;
+                                    margin: 27px 25px 25px 27px;
+                                    transition: all 0.8s;
+                                    opacity: 0;
+                                    background-color: rgba(255, 255, 255, 0.5);
+                                    transform: rotate(0deg);
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 两大势力
+            .content4 {
+                height: 729px;
+                display: inline-block;
+                text-align: left;
+
+                .title {
+                    background: url(../images/title4.png) no-repeat;
+                    background-size: 100%;
+                    display: inline-block;
+                    width: 171px;
+                    height: 71px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
+                .box4 {
+                    position: relative;
+                    width: 1225px;
+                    height: 633px;
+
+                    a {
+                        position: absolute;
+                        display: block;
+                        width: 566px;
+                        height: 633px;
+
+                        &:last-child {
+                            right: 0;
+                        }
+
+                        img {
+                            position: absolute;
+                        }
+
+                        div {
+                            position: absolute;
+                            display: none;
+                            width: 566px;
+                            height: 633px;
+                            background-color: #000;
+                            opacity: 0.5;
+                            z-index: 999;
+                        }
+                    }
+
+
+                }
+
+            }
+
+            //大美江湖
+            .content5 {
+                height: 550px;
+                display: inline-block;
+                text-align: left;
+
+                .title {
+                    background: url(../images/title5.png) no-repeat;
+                    background-size: 100%;
+                    display: inline-block;
+                    width: 171px;
+                    height: 71px;
+                    margin-top: 20px;
+                }
+
+                .see_more {
+                    background: url(../images/see.png) no-repeat;
+                    background-size: 100%;
+                    display: inline-block;
+                    width: 80px;
+                    height: 15px;
+                    float: right;
+                    margin-top: 25px;
+                    cursor: pointer;
+                }
+
+                div {
+                    width: 1225px;
+                    height: 440px;
+
+                    ul {
+                        li {
+                            float: left;
+
+                            img {
+                                width: 400px;
+                                height: 215px;
+                            }
+
+                            &:not(:nth-child(3n)) {
+                                margin-right: 10px;
+                            }
+
+                            &:nth-child(n+4) {
+                                margin-top: 10px;
+                            }
+                        }
+
+                        .box5_mc::before {
+                            display: block;
+                            content: "";
+                            width: 400px;
+                            height: 215px;
+                            position: absolute;
+                            background-color: #000;
+                            opacity: 0.5;
+                            z-index: 999;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+}

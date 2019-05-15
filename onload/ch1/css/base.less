@@ -1,0 +1,77 @@
+/* 将初始化代码单独设置为一个css文件,谁需要使用,就直接链接即可 */
+
+body,
+div,
+span,
+p,
+img,
+input,
+a,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+strong,
+em,
+del,
+ins,
+i,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: 0;
+    outline: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+i {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
